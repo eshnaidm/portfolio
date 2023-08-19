@@ -12,7 +12,7 @@
 
 ### 1. TC001 Functional
 
-Listing for sale and then removing an item for under 3.00$ on the Steam Community Market.
+**Listing for sale and then removing an item for under 3.00$ on the Steam Community Market.**
 
 #### **Test objective**
 
@@ -37,7 +37,7 @@ Steam guard on user's mobile steam app is linked for more then 7 days, the user 
 
 ### 2. TC002 Functional
 
-Creating a Game Collection and adding there games in the Steam Library
+**Creating a Game Collection and adding there games in the Steam Library**
 
 #### **Test objective**
 
@@ -59,6 +59,8 @@ The user have at least one game in the Steam library
 
 ### 3. TC003 Negative
 
+**Installing game from the library with insufficient disk space**
+
 #### **Test objective**
 
 Verify the behavior of the Steam client when attempting to download a game with insufficient disk space.
@@ -75,3 +77,48 @@ The user has 10 gigabytes of available space on their 'C:' disk. The user have g
 | Left click on the game that you have in the library | The game page appears with an 'Install' button. | As expected | Pass | - |
 | Click on the 'Install button' | A pop-up menu appears with installation options, including checkboxes for 'Create desktop shortcut' and 'Create start menu shortcut,' as well as options to select the installation disk for the game. | As expected | Pass | - |
 | Choose the 'C:' disk and click install | Under the disk selection options, an inscription appears that says "Not enough space." Additionally, a warning symbol appears next to the 'C:' disk option in the menu and the 'install' button is unclickable. | As expected | Pass | - |
+
+### 4. TC004 Functional
+
+**Filtering mature content from the Steam store and Steam community**
+
+#### **Test objective**
+
+Validate the effectiveness of the mature content filter feature within the Steam platform, ensuring that it accurately filters out and prevents the display of mature or inappropriate content to users who have the filter enabled
+
+#### **Test Preconditions**
+
+The user does not have any filters activated at the moment.
+
+### Execution
+
+| Steps                 | Expected result | Actual result | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Launch the steam app | The steam app launches and library page shows up | As expected | Pass | - |
+| Left click on 'Manage account' in the upper right side of the Steam page | The account options pop up with the following selections: 'View My Profile,' 'Account Details,' 'Store Preferences,' 'View My Wallet,' 'Change Account,' and 'Sign Out of Account.' | As expected | Pass | - |
+| Click on 'Store preferences' | The Preferences settings page appears, with the "Mature Content Filtering" option positioned at the top. All of the checkboxes are checked. | As expected | Pass | - |
+| Uncheck the 'General Mature Content' checkbox in both the 'Community' and 'Store' sections. | All of the checkboxes in the 'Store' and 'Community' sections are unchecked. | As expected | Pass | - |
+| Navigate to the Steam Store and conduct a search for 'GTA V' as an example of a mature game. | Upon clicking the search button, the game 'GTA V' does not appear in the search results. Instead, an inscription appears indicating how many titles were excluded based on your preferences. | As expected | Pass | - |
+| Navigate to the 'Community' tab and in the 'Find hubs' search bar conduct a search of 'Red dead redemption 2' as an example of a mature game. | A warning menu pops up, displaying the message: "This game contains content you have asked not to see, General mature content." The menu offers two options: "View the Community Hub" or "Go back to the main 'Community' tab page." | As expected | Pass | - |
+
+### 5. TC005 Negative
+
+**Attempting to Purchase an Item Bundle from the Point Shop with Insufficient Points**
+
+#### **Test objective**
+
+Verify the behavior of the Steam Point Shop when a user attempts to purchase an item bundle without having the required number of points, ensuring that the user is notified of the insufficient points and that the transaction is appropriately declined.
+
+#### **Test Preconditions**
+
+The user's point balance is 10,000 points, and the Point Shop contains an item bundle with a cost higher than the user's available point balance.
+
+### Execution
+
+| Steps                 | Expected result | Actual result | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Launch the steam app | The steam app launches and library page shows up | As expected | Pass | - |
+| Hover over the 'Store' tab and click on 'Points shop' option | The Points shop page shows up on the screen | As expected | Pass | - |
+| In the selection menu on the left, choose and click on the 'Item bundle' option | A page appears, displaying all available for purchase item bundles. | As expected | Pass | - |
+| Scroll until the end of the page and select "Dota 2 complete item bundle" | The Item Bundle page appears, displaying the bundle price and listing all the items included in the bundle. | As expected | Pass | - |
+| Click on the button that displays price of the bundle | A menu pops up, showcasing the contents of the bundle. At the bottom of the menu, it shows the additional points needed by the user to purchase the bundle. Below that, there are two buttons: 'How to Get Points' and 'Go Back.' | As expected | Pass | - |
