@@ -1,4 +1,4 @@
- # Test plan
+ # Steam Test plan
 
 #### Test planner: Erik, Test executor: Erik
 
