@@ -122,3 +122,21 @@ The user's point balance is 10,000 points, and the Point Shop contains an item b
 | In the selection menu on the left, choose and click on the 'Item bundle' option | A page appears, displaying all available for purchase item bundles. | As expected | Pass | - |
 | Scroll until the end of the page and select "Dota 2 complete item bundle" | The Item Bundle page appears, displaying the bundle price and listing all the items included in the bundle. | As expected | Pass | - |
 | Click on the button that displays price of the bundle | A menu pops up, showcasing the contents of the bundle. At the bottom of the menu, it shows the additional points needed by the user to purchase the bundle. Below that, there are two buttons: 'How to Get Points' and 'Go Back.' | As expected | Pass | - |
+
+### 6. TC006 Security
+
+**Brute Force attempt to log into account without knowing the password**
+
+#### **Test objective**
+
+Verify the security measures in place to prevent unauthorized access through brute force attempts, ensuring that the Steam platform safeguards user accounts against malicious login attempts.
+
+### Execution
+
+| Steps                 | Expected result | Actual result | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Log out from your account | The login interface appears, featuring boxes for entering the username and password, along with a "Sign In" button. | As expected | Pass | - |
+| Enter valid username and a wrong password | Red inscription appears "Please check your password and account name and try again" | As expected | Pass | - |
+| Repeat step 2 15 times | An error message appears, displaying the text: "Something went wrong while attempting to sign you in. Please try again later."  | As expected | Pass | - |
+| Repeat step 2 one more time | The error message consistently appears after every attempted login, imposing a 1-minute cooldown period between login attempts. | As expected | Pass | - |
+
