@@ -139,3 +139,29 @@ Verify the security measures in place to prevent unauthorized access through bru
 | Enter valid username and a wrong password | Red inscription appears "Please check your password and account name and try again" | As expected | Pass | - |
 | Repeat step 2 15 times | An error message appears, displaying the text: "Something went wrong while attempting to sign you in. Please try again later."  | As expected | Pass | - |
 | Repeat step 2 one more time | The error message consistently appears after every attempted login, imposing a 1-minute cooldown period between login attempts. | As expected | Pass | - |
+
+### 7. TC007 Portability
+
+**Checking if Text Message Sent to a Friend on the Launcher Appears on the Steam Website**
+
+#### **Test objective**
+
+Verify the synchronization and consistency of text messages sent to a friend through the Steam launcher, ensuring that messages sent on the launcher also appear accurately on the Steam website.
+
+#### **Test Preconditions**
+
+The Steam website is accessible and operational, the user have at least one friend on the steam account, and the user is logged into the same Steam account on the website as in the launcher.
+
+### Execution
+
+| Steps                 | Expected result | Actual result | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Launch the steam app | The steam app launches and library page shows up | As expected | Pass | - |
+| Click on 'Friends' tab in the upper left side of the app | A selection appears that allows you to view your friends list, your status, and edit your profile name or avatar. | As expected | Pass | - |
+| Click on 'View friends list' | A new tab displaying your friends list appears. | As expected | Pass | - |
+| Right click on one of the friends from the list | Options for interacting with the friend you clicked on appear. | As expected | Pass | - |
+| Click on the 'Send message' option | A new tab opens, displaying the chat conversation between the user and the friend. | As expected | Pass | - |
+| Write in the chat "Hello" to the friend and press Enter | The message sent and appears in the chat conversation | As expected | Pass | - |
+| Open the web browser and navigate to Steam website | The Steam website is opened, and it is displaying the store page | As expected | Pass | - |
+| Click on 'Chat' tab on the main page | Steam chat opens and on the left side is your friend list | As expected | Pass | - |
+| Double left-click in the friend list on the friend to whom you wrote a message. | The chat conversation appears, displaying the message "Hello" that the user sent from the Steam launcher. | As expected | Pass | - |
