@@ -1,4 +1,4 @@
- # Test plan
+ # Steam Test plan
 
 #### Test planner: Erik, Test executor: Erik
 
@@ -139,4 +139,3 @@ Verify the security measures in place to prevent unauthorized access through bru
 | Enter valid username and a wrong password | Red inscription appears "Please check your password and account name and try again" | As expected | Pass | - |
 | Repeat step 2 15 times | An error message appears, displaying the text: "Something went wrong while attempting to sign you in. Please try again later."  | As expected | Pass | - |
 | Repeat step 2 one more time | The error message consistently appears after every attempted login, imposing a 1-minute cooldown period between login attempts. | As expected | Pass | - |
-
