@@ -5,8 +5,9 @@
 - Enviroment: Windows 10
 - Project: Steam launcher version 1690583737
 - Date: 09.08.2023
+- **General preconditions: Steam launcher is installed and operational, valid steam account is logged in.**
 
-> General preconditions: Steam launcher is installed and operational, valid steam account is logged in.
+ ## [Test Cases](https://github.com/eshnaidm/portfolio/blob/main/Portfolio.md#issues) [Issues](https://github.com/eshnaidm/portfolio/blob/main/Portfolio.md#issues)
 
 ## Test cases
 
