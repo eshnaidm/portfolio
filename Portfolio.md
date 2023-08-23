@@ -189,3 +189,33 @@ The user has turned off the option to run Steam on startup.
 | Navigate to 'Interface' section and click on the gray button near the option 'Run steam when my computer starts' to turn it on. | The button that the user clicked on turns blue, indicating that the option is now turned on. | As expected | Pass | - |
 | Shut down the steam launcher | The Steam launcher shuts down and is not an active. | As expected | Pass | - |
 | Restart your computer | Upon computer startup, the Steam launcher successfully launches and opens as expected showing the library page. | As expected | Pass | - |
+
+
+### 9. TC009 Localization 
+
+**Changing Time Format When Switching Interface Languages on Steam Client**
+
+#### **Test objective**
+
+Verify that the time format displayed on the Steam client changes accordingly when switching between different interface languages, ensuring that the time format remains consistent with the selected language.
+
+#### **Test Preconditions**
+
+User's Steam client interface language is English, the user understand Russian language, the user have at least one friend on Steam
+
+### Execution
+
+| Steps                 | Expected result | Actual result | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Launch the steam app | The steam app launches and library page shows up | As expected | Pass | - |
+| Click on 'Friends' tab in the upper left side of the app | A selection appears that allows you to view your friends list, your status, and edit your profile name or avatar. | As expected | Pass | - |
+| Click on 'View friends list' | A new tab displaying your friends list appears. | As expected | Pass | - |
+| Right click on one of the friends from the list | Options for interacting with the friend you clicked on appear. | As expected | Pass | - |
+| Click on the 'Send message' option | A new tab opens, displaying the chat conversation between the user and the friend. | As expected | Pass | - |
+| Write in the chat "123" to the friend and press Enter | The sent message appears in the chat conversation, and above the message, the time stamp displays the current time in a 12-hour format, with "am" or "pm" indicating the time of day. | As expected | Pass | - |
+| Click on the 'Steam' button in the left corner of the screen | A selection menu appears, offering the option to navigate to the settings. | As expected | Pass | - |
+| Navigate to 'Interface' section and click on 'Steam client language' | A selection menu appears, offering a choice of languages to select from. | As expected | Pass | - |
+| Click on 'Russian' | A pop-up message appears, indicating that a restart of the Steam client is required. The message provides two options: "Restart Now" or "Restart Later." | As expected | Pass | - |
+| Click on 'Restart now' option | The Steam client restarts, and the main Steam page is now displayed in the Russian language. | As expected | Pass | - |
+| Repeat steps 2-5 | When the chat conversation tab pops up, the time stamp on the message now displays in 24-hour format. | As expected | Pass | - |
+
