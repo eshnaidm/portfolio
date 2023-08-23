@@ -320,3 +320,26 @@ The user have at least 21 tradable items in their Steam inventory
 | Hover over the 'Community' tab and select 'Market' option | - | - | - | - |
 | Click on the 'Sell an item' button in the top of the screen | - | - | - | - |
 | Click on 20 different items in your inventory. | After 20 clicks, the price in the item description continues to be displayed. | After 20 clicks, the description of the next item does not display its price on the market. | Fail | ![Alt text](https://i.imgur.com/xFdwywL.png "Screenshot") |
+
+### Issue #4
+
+**Dota 2 Game Statistics Exceeding Screen Bounds**
+
+#### **Issue description**
+
+While viewing game statistics in Dota 2, the text exceeds the page bounds, and the dark interface does not scale to fit the content properly.
+
+#### **Issue preconditions**
+
+The user have at least one played game on Dota 2
+
+### Reproducing
+
+| Steps to reproduce                | Expected behavior | Actual behavior | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Launch the steam app | - | - | - | - |
+| Navigate to your Steam profile | - | - | - | - |
+| Click on 'Games' section | - | - | - | - |
+| Under "Dota 2" press on 'My game stats' button | - | - | - | - |
+| Select the '*username* Personal Game Data' option | - | - | - | - |
+| In the category box select 'Matches' and in the subcategory box select 'Match History' | The game statistics fit on the screen correctly and do not exceed the page bounds. The dark interface scales to fit the content appropriately. | The game statistics exceed the page bounds and shift significantly to the left, causing the interface to not properly accommodate the content. | Fail | ![Alt text](https://i.imgur.com/ZUS44ze.png "Screenshot") |
