@@ -267,7 +267,7 @@ The user have at least one not installed game in the library, the user have enou
 
 **Disscussions preview does not disappear**
 
-#### Issue description
+#### **Issue description**
 
 In the Steam forums while loading another page and hovering over a thread, preview messages does not disappear from the screen until you click it.
 
@@ -279,5 +279,24 @@ In the Steam forums while loading another page and hovering over a thread, previ
 | Navigate to the discussions page within the 'Community' section | - | - | - | - |
 | Click on the "Help and tips" forum | - | - | - | - |
 | Click on the number "2" in the pages section to navigate to the second page. While the page is loading, hover over any thread in the forum. | After the second page loads, the preview message will disappear from the screen | The preview message stays on the screen until you click on it. | Fail | - |
-
 ![Alt text](https://i.imgur.com/i55SVZA.png "Screenshot")
+
+### Issue #2
+
+**Purchase button issue**
+
+#### **Issue description**
+
+The purchase button for a non-purchased game in the library is nonfunctional and does not respond when clicked.
+
+#### **Issue preconditions**
+
+The user have at least one non-purchased game in the library
+
+### Reproducing
+
+| Steps to reproduce                | Expected behavior | Actual behavior | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Launch the steam app | - | - | - | - |
+| Select non-purchased game that is in your library | - | - | - | - |
+| Click on the 'Purchase' button | Upon clicking the 'Purchase' button, the user is redirected to the Steam store page of the game, where they can proceed with the purchase. | Upon clicking the 'Purchase' button, nothing happens, and the user is not redirected to the Steam store. The user needs to navigate to the store page manually. | Fail | - |
