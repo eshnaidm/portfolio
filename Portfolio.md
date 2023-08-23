@@ -278,8 +278,8 @@ In the Steam forums while loading another page and hovering over a thread, previ
 | Launch the steam app | - | - | - | - |
 | Navigate to the discussions page within the 'Community' section | - | - | - | - |
 | Click on the "Help and tips" forum | - | - | - | - |
-| Click on the number "2" in the pages section to navigate to the second page. While the page is loading, hover over any thread in the forum. | After the second page loads, the preview message will disappear from the screen | The preview message stays on the screen until you click on it. | Fail | - |
-![Alt text](https://i.imgur.com/i55SVZA.png "Screenshot")
+| Click on the number "2" in the pages section to navigate to the second page. While the page is loading, hover over any thread in the forum. | After the second page loads, the preview message will disappear from the screen | The preview message stays on the screen until you click on it. | Fail | ![Alt text](https://i.imgur.com/i55SVZA.png "Screenshot") |
+
 
 ### Issue #2
 
