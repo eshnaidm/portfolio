@@ -260,3 +260,24 @@ The user have at least one not installed game in the library, the user have enou
 | Select your disk and click 'Install' button on the bottom of the menu | The user is directed back to the main game page. The "Install" button switches to a "Pause" button, and next to it, the installation progress of the game is displayed. | As expected | Pass | - |
 | Disconnect your internet connection | The progress of the installation stops, and the interface indicating the amount of data that has been downloaded remains stuck at a single number. | As expected | Pass | - |
 | Connect back to the internet | The installation progress resumes smoothly without any interruptions. | As expected | Pass | - |
+
+## Issues
+
+### Issue #1 
+
+**Disscussions preview does not disappear**
+
+#### Issue description
+
+In the Steam forums while loading another page and hovering over a thread, preview messages does not disappear from the screen until you click it.
+
+### Reproducing
+
+| Steps to reproduce                | Expected behavior | Actual behavior | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Launch the steam app | - | - | - | - |
+| Navigate to the discussions page within the 'Community' section | - | - | - | - |
+| Click on the "Help and tips" forum | - | - | - | - |
+| Click on the number "2" in the pages section to navigate to the second page. While the page is loading, hover over any thread in the forum. | After the second page loads, the preview message will disappear from the screen | The preview message stays on the screen until you click on it. | Fail | - |
+
+![Alt text](https://i.imgur.com/i55SVZA.png "Screenshot")
