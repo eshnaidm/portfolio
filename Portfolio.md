@@ -166,7 +166,6 @@ The Steam website is accessible and operational, the user have at least one frie
 | Click on 'Chat' tab on the main page | Steam chat opens and on the left side is your friend list | As expected | Pass | - |
 | Double left-click in the friend list on the friend to whom you wrote a message. | The chat conversation appears, displaying the message "Hello" that the user sent from the Steam launcher. | As expected | Pass | - |
 
-
 ### 8. TC008 Configuration
 
 **Enabling Steam Launcher to Run on Computer Startup**
@@ -189,7 +188,6 @@ The user has turned off the option to run Steam on startup.
 | Navigate to 'Interface' section and click on the gray button near the option 'Run steam when my computer starts' to turn it on. | The button that the user clicked on turns blue, indicating that the option is now turned on. | As expected | Pass | - |
 | Shut down the steam launcher | The Steam launcher shuts down and is not an active. | As expected | Pass | - |
 | Restart your computer | Upon computer startup, the Steam launcher successfully launches and opens as expected showing the library page. | As expected | Pass | - |
-
 
 ### 9. TC009 Localization 
 
@@ -239,3 +237,26 @@ The user have at least one not installed game in the library.
 | Navigate to the 'Store' tab | An error message appears: "Unable to connect to the server. The server may be offline, or you may not be connected to the internet." | As expected | Pass | - |
 | Navigate back to the library page and choose one not installed game. | The game page appears, but the news and updates for the game fail to load on the page. | As expected | Pass | - |
 | Click the blue 'Install' button on the game page | An error message pops up, stating: "An error occurred while installing *game name*: No internet connection." | As expected | Pass | - |
+
+### 11. TC011 Fail and recovery
+
+**Resuming Game Installation After Disconnecting and Reconnecting Internet**
+
+#### **Test objective**
+
+Verify the behavior of the Steam launcher when a game installation is started, the internet connection is disconnected, and then reconnected to resume the installation, ensuring that the installation process handles interruptions and recovery correctly.
+
+#### **Test Preconditions**
+
+The user have at least one not installed game in the library, the user have enough space on the disk to install the game.
+
+### Execution
+
+| Steps                 | Expected result | Actual result | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Launch the steam app | The steam app launches and library page shows up | As expected | Pass | - |
+| Navigate to the library page and choose one not installed game. | The game page appears with an blue 'Install' button in the center. | As expected | Pass | - |
+| Click 'Install' | A menu pops up, displaying installation options such as selecting the disk on which the user wants to install the game and choosing shortcut options. | As expected | Pass | - |
+| Select your disk and click 'Install' button on the bottom of the menu | The user is directed back to the main game page. The "Install" button switches to a "Pause" button, and next to it, the installation progress of the game is displayed. | As expected | Pass | - |
+| Disconnect your internet connection | The progress of the installation stops, and the interface indicating the amount of data that has been downloaded remains stuck at a single number. | As expected | Pass | - |
+| Connect back to the internet | The installation progress resumes smoothly without any interruptions. | As expected | Pass | - |
