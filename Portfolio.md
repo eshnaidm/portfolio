@@ -165,3 +165,27 @@ The Steam website is accessible and operational, the user have at least one frie
 | Open the web browser and navigate to Steam website | The Steam website is opened, and it is displaying the store page | As expected | Pass | - |
 | Click on 'Chat' tab on the main page | Steam chat opens and on the left side is your friend list | As expected | Pass | - |
 | Double left-click in the friend list on the friend to whom you wrote a message. | The chat conversation appears, displaying the message "Hello" that the user sent from the Steam launcher. | As expected | Pass | - |
+
+
+### 8. TC008 Configuration
+
+**Enabling Steam Launcher to Run on Computer Startup**
+
+#### **Test objective**
+
+Verify the functionality of the option to enable the Steam launcher to run automatically when the computer starts up, ensuring that the Steam launcher successfully launches upon computer boot.
+
+#### **Test Preconditions**
+
+The user has turned off the option to run Steam on startup.
+
+### Execution
+
+| Steps                 | Expected result | Actual result | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Launch the steam app | The steam app launches and library page shows up | As expected | Pass | - |
+| Click on the 'Steam' button in the left corner of the screen | A selection menu appears, offering the option to navigate to the settings. | As expected | Pass | - |
+| Click on 'Settings' option | A new tab opens, displaying the Steam launcher settings menu. | As expected | Pass | - |
+| Navigate to 'Interface' section and click on the gray button near the option 'Run steam when my computer starts' to turn it on. | The button that the user clicked on turns blue, indicating that the option is now turned on. | As expected | Pass | - |
+| Shut down the steam launcher | The Steam launcher shuts down and is not an active. | As expected | Pass | - |
+| Restart your computer | Upon computer startup, the Steam launcher successfully launches and opens as expected showing the library page. | As expected | Pass | - |
