@@ -280,7 +280,6 @@ In the Steam forums while loading another page and hovering over a thread, previ
 | Click on the "Help and tips" forum | - | - | - | - |
 | Click on the number "2" in the pages section to navigate to the second page. While the page is loading, hover over any thread in the forum. | After the second page loads, the preview message will disappear from the screen | The preview message stays on the screen until you click on it. | Fail | ![Alt text](https://i.imgur.com/i55SVZA.png "Screenshot") |
 
-
 ### Issue #2
 
 **Purchase button issue**
@@ -299,4 +298,25 @@ The user have at least one non-purchased game in the library
 | :-------------------- | :------ | :----: | :----: | :----: |
 | Launch the steam app | - | - | - | - |
 | Select non-purchased game that is in your library | - | - | - | - |
-| Click on the 'Purchase' button | Upon clicking the 'Purchase' button, the user is redirected to the Steam store page of the game, where they can proceed with the purchase. | Upon clicking the 'Purchase' button, nothing happens, and the user is not redirected to the Steam store. The user needs to navigate to the store page manually. | Fail | - |
+| Click on the 'Purchase' button | Upon clicking the 'Purchase' button, the user is redirected to the Steam store page of the game, where they can proceed with the purchase. | Upon clicking the 'Purchase' button, nothing happens, and the user is not redirected to the Steam store. The user needs to navigate to the store page manually. | Fail | ![Alt text](https://i.imgur.com/cPRfDWV.png "Screenshot") |
+
+### Issue #3
+
+**Item Prices Not Displaying in the users inventory**
+
+#### **Issue description**
+
+After clicking on 20 different items in the inventory, the item prices stop displaying, and they remain hidden until the app is restarted.
+
+#### **Issue preconditions**
+
+The user have at least 21 tradable items in their Steam inventory
+
+### Reproducing
+
+| Steps to reproduce                | Expected behavior | Actual behavior | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Launch the steam app | - | - | - | - |
+| Hover over the 'Community' tab and select 'Market' option | - | - | - | - |
+| Click on the 'Sell an item' button in the top of the screen | - | - | - | - |
+| Click on 20 different items in your inventory. | After 20 clicks, the price in the item description continues to be displayed. | After 20 clicks, the description of the next item does not display its price on the market. | Fail | ![Alt text](https://i.imgur.com/xFdwywL.png "Screenshot") |
