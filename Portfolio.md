@@ -219,3 +219,23 @@ User's Steam client interface language is English, the user understand Russian l
 | Click on 'Restart now' option | The Steam client restarts, and the main Steam page is now displayed in the Russian language. | As expected | Pass | - |
 | Repeat steps 2-5 | When the chat conversation tab pops up, the time stamp on the message now displays in 24-hour format. | As expected | Pass | - |
 
+### 10. TC010 Negative
+
+**Launching the steam launcher, opening the store, and trying to install game without an active internet connection**
+
+#### **Test objective**
+
+Explore the behavior of launching the Steam client without an active internet connection.
+
+#### **Test Preconditions**
+
+The user have at least one not installed game in the library.
+
+### Execution
+
+| Steps                 | Expected result | Actual result | Pass/Fail | Details
+| :-------------------- | :------ | :----: | :----: | :----: |
+| Disable your internet connection and launch steam launcher | The Steam launcher launches in windowed mode, displaying the Library page. At the bottom of the screen, a message appears indicating "No connection." | As expected | Pass | - |
+| Navigate to the 'Store' tab | An error message appears: "Unable to connect to the server. The server may be offline, or you may not be connected to the internet." | As expected | Pass | - |
+| Navigate back to the library page and choose one not installed game. | The game page appears, but the news and updates for the game fail to load on the page. | As expected | Pass | - |
+| Click the blue 'Install' button on the game page | An error message pops up, stating: "An error occurred while installing *game name*: No internet connection." | As expected | Pass | - |
