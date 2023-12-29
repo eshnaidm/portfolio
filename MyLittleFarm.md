@@ -96,18 +96,18 @@ Additionally, ingots, alloys, stones, and more are used in constructions, quests
 
 Types of ores, their smelting, and types of pickaxes used to break them:
 
-- Stone (without smelting). Broken with the initial pickaxe. Used in construction.
-- Coal (without smelting). Broken with the initial pickaxe. Used in the workshop as fuel (in smelting).
-- Iron Ore -> Iron Ingot (10 iron ore, 1 coal, 1 minute). Broken with a pickaxe at level 10. Used in construction and jewelry making.
-- Copper Ore -> Copper Ingot (10 copper ore, 1 coal, 1 minute). Broken with a pickaxe at level 10. Used in construction and jewelry making.
-- Silver Ore -> Silver Ingot (10 silver ore, 2 coal, 1 minute). Broken with a pickaxe at level 20. Used in jewelry making.
-- Quartz Ore -> Quartz (10 quartz ore, 2 coal, 1 minute). Broken with a pickaxe at level 20. Used in construction.
-- Gold Ore -> Gold Ingot (10 gold ore, 3 coal, 1 minute). Broken with a pickaxe at level 30. Used in jewelry making and construction.
-- Amethyst Ore -> Amethyst (10 amethyst ore, 3 coal, 1 minute). Broken with a pickaxe at level 30. Used in jewelry making.
-- Platinum Ore -> Platinum (10 platinum ore, 4 coal, 1 minute). Broken with a pickaxe at level 40. Used in construction and jewelry making.
-- Emerald Ore -> Emerald. Broken with a pickaxe at level 40 (10 emerald ore, 4 coal, 1 minute). Used in jewelry making.
-- Titanium Ore -> Titanium Ingot (10 titanium ore, 5 coals, 1 minute). Broken with a pickaxe at level 50. Used in construction.
-- Diamond Ore -> Diamond (10 diamond ore, 5 coals, 1 minute). Broken with a pickaxe at level 50. Used in jewelry making.
+- **Stone** (without smelting). Broken with the initial pickaxe. Used in construction.
+- **Coal** (without smelting). Broken with the initial pickaxe. Used in the workshop as fuel (in smelting).
+- **Iron Ore → Iron Ingot** (10 iron ore, 1 coal, 1 minute). Broken with a pickaxe at level 10. Used in construction and jewelry making.
+- **Copper Ore → Copper Ingot** (10 copper ore, 1 coal, 1 minute). Broken with a pickaxe at level 10. Used in construction and jewelry making.
+- **Silver Ore → Silver Ingot** (10 silver ore, 2 coal, 1 minute). Broken with a pickaxe at level 20. Used in jewelry making.
+- **Quartz Ore → Quartz** (10 quartz ore, 2 coal, 1 minute). Broken with a pickaxe at level 20. Used in construction.
+- **Gold Ore → Gold Ingot** (10 gold ore, 3 coal, 1 minute). Broken with a pickaxe at level 30. Used in jewelry making and construction.
+- **Amethyst Ore → Amethyst** (10 amethyst ore, 3 coal, 1 minute). Broken with a pickaxe at level 30. Used in jewelry making.
+- **Platinum Ore → Platinum** (10 platinum ore, 4 coal, 1 minute). Broken with a pickaxe at level 40. Used in construction and jewelry making.
+- **Emerald Ore → Emerald** Broken with a pickaxe at level 40 (10 emerald ore, 4 coal, 1 minute). Used in jewelry making.
+- **Titanium Ore → Titanium Ingot** (10 titanium ore, 5 coals, 1 minute). Broken with a pickaxe at level 50. Used in construction.
+- **Diamond Ore → Diamond** (10 diamond ore, 5 coals, 1 minute). Broken with a pickaxe at level 50. Used in jewelry making.
 
 ### Fishing
 
@@ -128,3 +128,270 @@ The difficulty of catching depends not just on the weight but on how this weight
 Also, with a low chance, the player can catch trash that will be worth nothing.
 
 The player enters fishing through the NPC fisherman Henry on their farm, and returns home through NPC fisherman Henry at the fishing spot.
+
+## Locations
+
+### General Principles
+
+On the farm, there will be three sub-locations, each with its NPCs, active tasks, and questlines. 
+
+To access the NPCs in a new location, the player will need to complete the questline in the previous one.
+
+Additionally, at the center of the map, there will be a stand with a farm map that players can use for orientation.
+
+### South Part
+
+**NPC: Grandma Lyuda**
+
+Active Tasks: Grass cutting, Tree cutting, Mining.
+
+Crops and productions list:
+
+1) Wheat → Bread
+2) Potato → Baked potato
+3) Carrot → Carrot juice
+4) Sugar cane → Sugar
+5) Tea leaf → Tea
+6) Onion → Onion rings
+7) Grape → Wine
+8) Raspberry → Raspberry jam
+9) Cotton → Cotton fiber
+10) Strawberry → Strawberry jam
+
+### West Part
+
+**NPC: Mihalych**
+
+Active tasks: Fishing (with a dedicated NPC on this location - Fisherman Henry)
+
+Crops and production list:
+
+1) Tulip → Tulip Bouquet
+2) Flax → Yarn
+3) Corn → Corn Chips
+4) Sunflower → Sunflower Oil
+5) Cocoa Beans → Cocoa Powder
+6) Hops → Premium Hops
+7) Rose → Rose Bouquet
+8) Tomato → Ketchup
+9) Peony → Peony Bouquet
+10) Currant → Currant Juice
+
+### East Part
+
+**NPC: Koryagin**
+
+Active tasks: Cargo hauling
+
+List of **Trees**, their Fruits (products) and productions:
+
+**Tree** - a structure that functions like a plant. Generates passive income. 
+
+After purchasing the eighth tree, products are delivered to the warehouse.
+
+1) Cinnamon Tree (cinnamon) → Ground Cinnamon
+2) Apple Tree (apple) + sugar + dough + egg → Apple Charlotte
+3) Peach Tree (peach) + sugar + ground cinnamon + milk → Peach Smoothie
+4) Pear Tree (pear) + dough + cheese + pork → Pear Pizza
+5) Orange Tree (orange) + ground cinnamon + dough + sugar → Orange Cake
+
+### North Part
+
+The northern part will not have plants, animals, or trees.
+
+It consists of a forest for lumberjacking and mines in the forest for mining.
+
+Additionally, in the forest, there will be a lake where fish will appear depending on the amount of fish caught during fishing.
+
+## Animals
+
+Animals, much like plants, generate passive income and produce products that can be utilized later in production structures.
+
+1) Chicken → Egg
+2) Rabbit → Rabbit hide
+3) Sheep → Wool
+4) Pig → Pork
+5) Cow → Milk
+6) Mushroom cow → Mushroom
+7) Bee → Honey
+   
+## Production recipes
+
+1) Wheat → Dough (Bakery)
+2) Potato → Baked Potato (Bakery)
+3) Carrot → Carrot Juice (Bar)
+4) Sugar Cane → Sugar (Factory)
+5) Tea Leaf → Tea (Café)
+6) Onion → Onion Rings (Bar)
+7) Grape → Wine (Bar)
+8) Raspberry → Raspberry Jam (Factory)
+9) Cotton → Cotton Fiber (Sewing Workshop)
+10) Strawberry → Strawberry Jam (Factory)
+11) Tulip → Tulip Bouquet (Flower Shop)
+12) Flax → Yarn (Sewing Workshop)
+13) Corn → Corn Chips (Bar)
+14) Sunflower → Sunflower Oil (Factory)
+15) Cocoa Beans → Cocoa Powder (Factory)
+16) Hops → Premium Hops (Bar)
+17) Rose → Rose Bouquet (Flower Shop)
+18) Tomato → Ketchup (Café)
+19) Peony → Peony Bouquet (Flower Shop)
+20) Currant → Currant Juice (Bar)
+21) Cinnamon → Ground Cinnamon (Café)
+22) Apple + Sugar + Dough + Egg → Apple Charlotte (Bakery)
+23) Peach + Sugar + Ground Cinnamon + Milk → Peach Smoothie (Bar)
+24) Pear + Dough + Cheese + Pork → Pear Pizza (Café)
+25) Orange + Ground Cinnamon + Dough + Sugar → Orange Cake (Bakery)
+26) Rose Bouquet + Tea Leaf → Hibiscus Tea (Café)
+27) Milk → Cheese (Factory)
+28) Sunflower Oil + Potato → Fried Potato (Bar)
+29) Wheat + Premium Hops → Beer (Bar)
+30) Cocoa Powder + Sugar → Chocolate (Factory)
+31) Corn + Wheat → Corn Flatbread (Café)
+32) Pork + Tomatoes + Baked Potato + Cheese → French-Style Pork (Café)
+33) Wine + Rose Bouquet + French-Style Pork → Romantic Dinner (Café)
+34) Corn Chips + Beer + Ketchup + Fried Potato → Soul of the Party (Bar)
+35) Milk + Sugar → Yogurt (Factory)
+36) Apple + Strawberry + Peach + Yogurt → Fruit Salad (Café)
+37) Fruit Salad + Currant Juice → Fruit Delight (Café)
+38) Dough + Sugar → Pancake (Bakery)
+39) Dough → Bread (Bakery)
+40) Bread + Raspberry Jam → Bread with Jam (Bakery)
+41) Pancake + Carrot Juice + Bread with Jam → Champion's Breakfast (Café)
+42) Dough + Sugar + Milk + Honey → Honey Cake (Bakery)
+43) Dough + Chocolate → Chocolate Cookies (Bakery)
+44) Tea + Honey Cake + Chocolate Cookies → Cozy Teatime (Bar)
+45) Rabbit Hide + Cotton Fiber → Fur Coat (Sewing Workshop)
+46) Wool + Yarn → Sweater (Sewing Workshop)
+47) Fur Coat + Sweater → Winter Fashion (Sewing Workshop)
+48) Ketchup + Tomato + Corn Flatbread + Mushroom + Pork + Onion Rings → Shawarma (Bar)
+49) Mushroom → Braised Mushrooms (Factory)
+50) Strawberry Jam + Dough → Bun with Jam (Bakery)
+51) Egg + Milk + Sugar + Honey → Chak-Chak (Bakery)
+52) Honey + Premium Hops + Ground Cinnamon → Mead (Bar)
+
+## Jewelry recipes (Crafting in the workshop)
+
+1) Iron Ingot → Iron Chain
+2) Copper Ingot → Copper Bracelet
+3) Silver Ingot → Silver Brooch
+4) Silver Ingot → Silver Necklace
+5) Gold Ingot → Gold Earrings
+6) Gold Ingot → Gold Ring
+7) Amethyst + Silver Brooch → Amethyst Brooch
+8) Amethyst + Gold Ring → Amethyst Ring
+9) Platinum Ingot → Platinum Pendant
+10) Platinum Ingot → Platinum Ring
+11) Emerald + Platinum Pendant → Emerald Pendant
+12) Diamond + Platinum Ring → Diamond Ring
+
+## Buildings
+
+### Production Buildings
+
+#### Warehouse (available from the beginning of the game):
+
+A building that will be responsible for the menu that the player currently has through the inventory. 
+
+The menu will be available only through the building itself.
+
+Initially level 1, upgradeable to level 5.
+
+##### Product limits per levels:
+- Level 1: 25
+- Level 2: 50
+- Level 3: 75
+- Level 4: 100
+- Level 5: 200
+
+##### Upgrade time: 
+- 1→2 - 20 minutes, 
+- 2→3 - 40 minutes, 
+- 3→4 - 60 minutes, 
+- 4→5 - 90 minutes.
+
+#### Workshop:
+
+A building where players buy blueprints for the construction of future buildings for money. 
+
+Buildings and decorative structures below are built when the purchased blueprint is available, along with the necessary materials!!! 
+
+Also, players upgrade tools there. The workshop itself is built without a blueprint; only materials from active jobs and money are needed. 
+
+Materials for crafting: stone, oak, $5000.
+
+### Blueprint list
+
+**Bakery (Processing Building):**
+
+Materials for crafting: stone, oak.
+
+**Bar (Processing Building):**
+
+Materials for crafting: stone, oak, iron ingot.
+
+**Factory (Processing Building):**
+
+Materials for crafting: iron ingot, stone, copper ingot, birch.
+
+**Cafe (Processing Building):**
+
+Materials for crafting: stone, iron ingot, copper ingot, birch.
+
+**Sewing Workshop (Processing Building):**
+
+Materials for crafting: copper ingot, quartz, stone, birch, spruce.
+
+**Flower Shop (Processing Building):**
+
+Materials for crafting: stone, copper ingot, quartz, spruce, dark oak.
+
+#### Decorative buildings
+
+**Well:**
+
+Decorative structure, gives 1.1x to income.
+
+Materials for crafting: stone, oak.
+
+**Golem Statue:**
+
+Decorative structure, gives 1.2x to income.
+
+Materials for crafting: iron ingot, stone.
+
+**Globe:**
+
+Decorative structure, gives 1.3x to income.
+
+Materials for crafting: copper ingot, iron ingot.
+
+**Eternal Flame:**
+
+Decorative structure, gives 1.4x to income.
+
+Materials for crafting: quartz, copper ingot.
+
+**Golden Angel:**
+
+Decorative structure, gives 1.5x to income.
+
+Materials for crafting: gold ingot, quartz.
+
+**King Arthur's Sword:**
+
+Decorative structure, gives 1.6x to income.
+
+Materials for crafting: platinum, gold ingot, iron ingot, stone.
+
+**Tree of Eywa (from the movie "Avatar"):**
+
+Decorative structure, gives 1.7x to income.
+
+Materials for crafting: tropical wood, acacia.
+
+**Colossus of Rhodes:**
+
+Decorative structure, gives 1.8x to income.
+
+Materials for crafting: titanium ingot, platinum, gold ingot.
