@@ -346,7 +346,7 @@ Materials for crafting: copper ingot, quartz, stone, birch, spruce.
 
 Materials for crafting: stone, copper ingot, quartz, spruce, dark oak.
 
-#### Decorative buildings
+### Decorative buildings
 
 **Well:**
 
@@ -395,3 +395,174 @@ Materials for crafting: tropical wood, acacia.
 Decorative structure, gives 1.8x to income.
 
 Materials for crafting: titanium ingot, platinum, gold ingot.
+
+## Visit to a friend's farm
+
+On the map, there will be a bus with an NPC. 
+
+When the player clicks on the NPC, a menu pops up, and the player enters the nickname of the person they want to visit. 
+
+After that, the player is teleported onto the bus, the screen darkens, and then the player appears on the other person's farm near the bus NPC.
+
+## Events
+
+1) Drought (summer, autumn) - Reduces passive income from crops by 50%. To remove this effect, the player needs to provide a bucket of water to each NPC near the garden beds.
+2) Morning dew (summer, spring) - Increasing grass cutting income by 25%
+3) Blossoming (spring, summer) - Increasing crops passive income by 50%
+4) Muck (spring, summer, autumn) -  The player becomes dirty, every NPC will refuse to engage in conversation until they immerse themselves in water and clean up.
+5) Drowned (spring, summer, autumn) -  If the player stays in the water for too long, they become drowned. To remedy this, they need to spend some time out of the water.
+6) Bustle (spring, summer) - Animals producing products in x2 speed, increasing their passive income by 50%.
+7) Famine (year-round) - Animals become hungry, ceasing product production and reducing passive income by 50%. To rectify this, the player needs to provide a bowl of food to every NPC near them.
+8) Flu (winter) - if the player is outdoors, there is a chance of getting the Flu event (formula with muck, NPCs don't interact with the player). To remove: enter the house, spend 4 in-game hours in the house (10 minutes real-time). 
+9) Claustrophobia works the same way as the flu, but if the player is indoors. To remove, stand outside for 4 in-game hours.
+10) Hoarfrost (winter) - grass gives x3 money. Can drop from 4 a.m. to 12 p.m. in real life (same as morning dew, but in winter).
+11) Malfunction (year-round) - a random production branch breaks, the event does not stack. Completely stops a specific production. The debuff is fixed if the player takes a wrench from the granny and clicks on the NPC.
+12) Taxation (year-round) - once every 30 hours of online play, 40% of the balance will be deducted from the player.
+13) Hour of Reckoning (year-round) - The player needs to pay 10x of his passive income to continue playing.
+14) Productivity (year-round) - increases processing speed and plant production speed by 20%.
+15) Strike (year-round) - reduces processing and plant production speed by 50%. To get rid of the event, talk to NPCs in a randomly set order. 
+
+(Trying to talk to an NPC out of turn will make them send you away, for example: "I don't want to talk to you until you settle things with others.")
+
+## Items
+
+**Axe (Tree cutting)** - issued immediately.
+
+**Pickaxe (mining)** - issued immediately.
+
+**Fishing rod (fishing)** - Need to be purchased from the workshop
+
+**Phone** - opens a contact list, in which the player selects the desired NPC, and after selection, the corresponding menu opens.
+
+**Farmer's Diary** - 
+
+- A book that stores information about plants, buildings, and animals. 
+
+- All of this is revealed during the game. 
+
+- All information about a crop appears only when the player has acquired that crop. Functions as a mini-wiki.
+
+**Calendar** - Show the date and season
+
+## Holidays
+
+### Winter
+
+#### New Year 
+
+(lasts 8 days, from December 31 to January 7) - a Christmas tree appears in the square. 
+
+Individually for each player, 12 gifts will be placed on their farm. 
+
+From the gifts, three hats can drop, which can be obtained and worn only during this holiday (cannot be repeated), as well as passive income ranging from 3 to 10 minutes in the form of a monetary amount.
+
+NPCs on the farm will wear Christmas hats.
+
+**Christmas hats from gifts:**
+
+**Santa's Hat** (works only on New Year's, i.e., the hat will not work outside of the holiday) - immunity to the flu + flight + Christmas hat.
+
+**Grinch Mask** (works only on New Year's) - after wearing it, 3 more gifts spawn on the farm (was 12 in total, becomes 15).
+
+**Ice Crown** (works only on New Year's) - the "Blizzard" event avoids the player, the chance of hoarfrost increases by 1.5 times.
+
+From one of the 12 gifts, a player will randomly receive a Christmas ornament, which they can place in the gift block under the tree. 
+
+Ornaments will provide a global booster during this event: every 10 ornaments increase the global income booster by 0.1x (1.1x booster at 10 ornaments, 1.2x at 20, etc.), global production speed increases by +2%, and global crop export speed increases by +2%. 
+
+The maximum number of ornaments that can be placed in the gift block is 100.
+
+#### Valentine's Day 
+
+(February 14, three days) - a big heart appears in the square <3. 
+
+Players can give three Valentines, write something cute <333.
+
+If you give someone a Valentine, and they give it back to you, you can earn income for your farm by being on the "lover's" farm during the holiday.
+
+#### Maslenitsa 
+
+(February 25 - March 3) - a scarecrow appears in the square. Players will receive 1.2x income, and production speed will increase by +10% if the player is in the square. 
+
+Pancakes from their farm will be sold for twice the price.
+
+Pancakes will also be sold in the square. The cost of one pancake is 45 minutes of passive income for the player. 
+
+The maximum number of pancakes a player can buy is 5. The player can give a pancake to an NPC with plants/trees, an NPC with an animal, or an NPC on a building on their farm. 
+
+If the player gives a pancake to an NPC with a plant/tree, the income from the crop will double; 
+
+if the pancake is received by an NPC with an animal, the production speed will increase by 1.25 times; if the player gives a pancake to an NPC with a building, +25% to the speed of exporting crops and processing. 
+
+During the holiday, it is also not possible to sell meat products (pork, pear pizza, French-style pork, romantic dinner, shawarma).
+
+### Spring
+
+#### May Day 
+
+(May 1, three days) - while the player is actively working, flowering occurs (flowering fades if the player is not actively working for 1 minute). 
+
+Cargo transfer, grass, and fishing give 1.5 times more income. 
+
+An NPC with barbecues appears in the square, which can speed up the production of meat production by 2 times
+
+(click on the barbecue, and a menu appears where you can make meat production (pear pizza, French-style pork, romantic dinner, shawarma) for the time that is twice less in a building on the farm).
+
+During the holiday, introduce temporary leaderboards for the caught fish (fishing), carried cargoes (cargo hauling), and broken grass (grass). 
+
+According to these three leaderboards, boosters will be given on the next day after the holiday (May 4, 1 real hour) as follows:
+- Top-1 - x3 to caught fish (fishing top), x3 to cargo (cargo hauling top), x3 to grass (grass top).
+- Top-2 - x2 to fish, cargo, and grass (similarly).
+- Top-3 - x1.5 to fish, cargo, and grass (similarly).
+
+### Summer
+
+#### Farm Day 
+
+A big cake appears in the square. During this holiday, negative events will not be imposed on players.
+
+The processing speed of products, the export of crops, and the production of animal products increase by 20%.
+
+Honey cake will be sold for 1.5 times the price.
+
+NPCs on the farm will wear festive hats.
+
+During mining and logging, players have a chance to receive a **gift**. 
+
+They must bring this **gift** to the cake in the square and click on it with the gift. After clicking with the gift on the cake, one candle appears. 
+
+The maximum number of candles on the cake can be 100. Every 10 candles add +0.05x to the global booster (1.05x for 10 candles, 1.1x for 20, 1.5x for 100).
+
+Players can wear hats of a certain color through an NPC in the square (opens a menu with hats of different colors, the player chooses their own).
+
+### Autumn
+
+Halloween 
+
+(October 31, seven days) - a large pumpkin appears in the square.
+The "Nightmares" event may occur, which resets income, stops production, processing, and export. 
+
+It can be removed by "playing dead" and getting a drowned event, and then removing it.
+
+Players receive 10 candies and a basket in their inventory. 
+
+Players can poke another player once with a candy to give 1 candy (if you try to poke a player with candy again, they will refuse) into the basket of another player, and the basket will count the number of candies. 
+
+From this, players will receive a local boost +0.1x from every 10th candy in their basket (1.1x booster with 10 candies, 1.2x with 20, etc.), local production speed increases by +2%, and local crop export speed increases by +2%. 
+
+The maximum number of candies a player can collect in the basket is 100. When a player gives a candy, they get +2% to the processing speed (give all 10 candies - get +20% to the speed).
+
+## Square
+
+Square - a place where players can gather. In winter, there will be a hockey rink on the square, and the rest of the time, there will be a football field instead. 
+
+Players can play hockey/football. There will be benches where players can sit (two at a time). There will be mini-games to pass the time for fun.
+
+### List of games on the square:
+
+1) Checkers 1vs1
+2) Whack-a-Mole (Leaderboard for moles per game)
+3) Parkour (Leaderboard by time, disables fly in the area)
+4) Dropper (Disables fly in the area)
+5) Races around the square (for 4 players)
+6) Tic-Tac-Toe
