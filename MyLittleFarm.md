@@ -566,3 +566,67 @@ Players can play hockey/football. There will be benches where players can sit (t
 4) Dropper (Disables fly in the area)
 5) Races around the square (for 4 players)
 6) Tic-Tac-Toe
+
+## Daily Login
+
+- Day 1 - Active tasks modifier 1.25x for 1 hour
+- Day 2 - Amount of money thats equals to the passsive income for 5 minutes
+- Day 3 - Haste for digging for 1 hour +10%
+- Day 4 - Plant production speed booster for 1 hour +25%
+- Day 5 - Amount of money thats equals to the passsive income for 20 minutes
+- Day 6 - Blossoming event for 30 minutes
+- Day 7 - Production speed booster for 1 hour +50%
+
+## Visual and Sound effects
+
+### Visual effects
+
+- Smoke
+- Falling leaves
+- Lying leaves (on blocks near trees)
+- Glowing particles from ores (regular ore-colored particles)
+- Snow (falling)
+- Footprints in the snow (when walked upon with a certain chance)
+- Fish animation (swimming in the player's farm lake)
+- Swaying grass
+- Butterflies (flying across the map except in winter)
+- Bus exhaust fumes
+- Dew on the grass
+- Frost on windows
+- Grass in frost
+- Tree falling animation
+- Conveyor animation at the factory (conveyor moves products when production is active at the factory)
+- Light from the Christmas tree (glowing star on the Christmas tree)
+
+### Sound effects
+
+- Sound of a positive event
+- Sound of a negative event
+- Sound of lifting and lowering cargo (creaking)
+- Musical themes for each location
+- Musical theme for each holiday (plays only in the square)
+- Splash of water when casting and retracting the fishing rod, and when interacting with water, as well as when drawing water from the well
+- Campfire crackling sound (also used in the bakery and cafe)
+- Chicken clucking near the chickens
+- Crickets at night
+- Bleating near the sheep
+- Mooing near the cows (including mushroom cows)
+- Buzzing of bees
+- Oinking near the pigs
+- Sound of hitting metal in the workshop
+- Sound of the conveyor at the factory
+- Sound of glasses clinking every 10 seconds in the bar
+- Sound of a sewing machine in the sewing workshop
+- Bus horn when approaching it
+- Bus engine after the player has chosen whom to visit
+- Phone beeps when opening the phone
+- Sound of a falling tree
+- Echo in the mine (breaking blocks, footsteps)
+- Sound of flipping pages in the diary
+- Sound of an overflowing backpack when the backpack is full
+- SMS sound (randomly when an active quest is ongoing)
+- Sound of feeding an animal
+- Coughing during the flu
+
+## NPC Dialogs
+
