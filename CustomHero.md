@@ -120,9 +120,103 @@ This mode features 12 players, organized into 2 teams with 6 players each.
 ### Differences:
 In Team Mode, each player has a reserve of 6 lives.
 
-During 6 vs 6 duels, each player from the losing team loses a life. If a player has no lives left, they receive a curse.
+- During 6 vs 6 duels, each player from the losing team loses a life. If a player has no lives left, they receive a curse.
 
-If a 1 vs 1 duel concludes, players return to battling monsters if the team hasn't finished the wave.
-There are no stakes in this mode; players receive dividends if their ally wins a duel or if the team wins a duel.
+  If a 1 vs 1 duel concludes, players return to battling monsters if the team hasn't finished the wave.
+
+  There are no stakes in this mode; players receive dividends if their ally wins a duel or if the team wins a duel.
 
 The algorithm for initiating duels differs from other formats. 1 vs 1 duels start from the second wave, while 6 vs 6 duels occur every 6 waves (i.e., on waves 6, 12, 18, etc.).
+
+## Character
+
+Each character has an ability, either active or passive, as well as an improvement with a shard. 
+
+A shard can enhance existing abilities, passives, or add new ones. Characters will be continually added, and their complexity can vary significantly. 
+
+Therefore, the abstraction must be very flexible and well-thought-out in advance for all possible scenarios.
+
+All characters can be categorized, and depending on the category, players may be offered different guaranteed items. This refers to only one guaranteed item in each selection of 11.
+
+### Categories:
+
+>- Warrior (melee) - guaranteed weapons will always be stone, iron, or diamond swords and axes.
+>
+>- Marksman (ranged) - guaranteed weapon will always be a bow.
+>
+>- Tank (high health/regeneration) - guaranteed armor will always be chainmail, iron, or diamond.
+>
+>- Summoner (summoned creatures) - no changes in the randomization of guaranteed items.
+
+### Character Selection:
+Before the game starts, each player must choose their character, and this menu cannot be closed until the role is selected. 
+
+A green checkmark denotes the guaranteed role, which remains unchanged during rerolls. The number of rerolls depends on the privilege.
+
+### 1. Ninja (Warrior)
+
+**Description**
+
+A mysterious warrior, stealthy and swift as a shadow, skilled in the art of ninjutsu.
+
+**Characteristics**
+
+| Characteristic | Value |
+| :----------:   | :---- |
+| Damage | 1.05 |
+| Maximum Health | 19 |
+| Speed | 200 |
+| Regeneration | 0.83 |
+
+**Attributes**
+| Attribute | Growth |
+| :----------:   | :---- |
+| Damage Growth | 0.05 |
+| Health Growth | 1.64 |
+| Regeneration Growth | 0.06 |
+
+**Standart Skill**
+Blade Dance [Passive]
+
+**Ability Description**
+Type: Passive
+
+In melee combat, gives the character a chance to deal critical damage with attacks.
+
+Critical Hit Chance: 20%
+
+Critical Damage: 180%
+
+**Shard**
+
+Healing Totem [Ability]
+
+**Ability Description**
+Type: Usable
+
+Summons a totem that heals all allies within its range.
+
+- Max Health per Second: 5%
+- Range: 4 blocks
+- Hits to Destroy: 8
+- Duration: 25 seconds
+- Cooldown: 60 seconds
+
+When the ability is used near the owner, a "Healing Totem" appears.
+
+When the ability is used near a player, a "Healing Totem" appears that follows the player and heals the owner/allies within its range. 
+
+The totem can be damaged by enemies, but its destruction is based on the number of hits, not the amount of damage. 
+
+Restores 5% of the player's maximum health every second. Invulnerable to area-of-effect attacks, projectiles, effects, and similar.
+
+| Characteristic | Value |
+| :----------:   | :---- |
+| Range | 4 blocks |
+| Tracking Range | 3.5 blocks |
+| Cooldown | 60 seconds |
+| Hits to Destroy | 8 hits |
+| Active for | 25 seconds |
+| Health per Second | 5% |
+
+### 2. Assassin (Warrior)
