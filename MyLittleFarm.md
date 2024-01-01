@@ -1,4 +1,9 @@
 # MyLittleFarm Game design document
+
+> Originally written in Russian, translated by Erik
+
+> This document excludes economy design, economy described in other document
+
 ## Game essence
 - **The essence of the MyLittleFarm mini-game** is for players to develop a farm by buying plants, animals, and structures. 
 
@@ -689,3 +694,261 @@ Players can play hockey/football. There will be benches where players can sit (t
 | Lancelot | Sword of King Arthur | I see that a person like you is unworthy of such an exquisite monument. | Nice doing business with you, valiant warrior! Your Excalibur will be ready soon. | The sword is already in place and awaits its hero; I require nothing more from you. |
 | Neytiri | Tree of Eywa | You lack what is needed. You are a stranger in this territory. | The sacred tree has rooted itself in this land! | The Great Mother preserves the balance of life, just as the balance on these lands. Possess this world anew, and chaos will befall us. |
 | Helios | Colossus of Rhodes | You cannot attain the divine dimension until you master all that is necessary! | My respects, mortal! Now this place can truly be called a wonder of light! | My task here is done, our paths diverge from now on. I shall bless this land no more. |
+
+## Textures and icons
+### Plants and Trees
+- Tea Leaf, 
+- Onion, 
+- Grape, 
+- Raspberry, 
+- Cotton, 
+- Strawberry, 
+- Flax, 
+- Corn, 
+- Sunflower, 
+- Cocoa Beans (Bush), 
+- Hops, 
+- Tomato, 
+- Currant, 
+- Cinnamon (Tree Leaves), 
+- Apple Tree (Tree Leaves), 
+- Peach (Tree Leaves), 
+- Pear (Tree Leaves), 
+- Orange (Tree Leaves)
+### Cargo Hauling
+- Cargo Block (available in various variations)
+### Mining
+- Copper Ore, 
+- Copper Ingot, 
+- Silver Ore, 
+- Silver Ingot, 
+- Quartz Ore, 
+- Amethyst Ore, 
+- Amethyst, 
+- Platinum Ore, 
+- Platinum Ingot, 
+- Titanium Ore, 
+- Titanium Ingot
+### Animals
+- Bee Texture, 
+- Beehive Block
+### Products Icons
+- Dough, Baked Potato, Carrot Juice, Tea Leaf, Tea, Onion, Onion Rings, Grape, Wine, Raspberry, Raspberry Jam, Cotton, Cotton Fiber, Strawberry, Strawberry Jam, 
+- Tulip Bouquet, Flax Yarn, Corn, Corn Chips, Sunflower, Sunflower Oil, Cocoa Powder, Hops, Select Hops, Rose Bouquet, Tomato, Ketchup, Peony Bouquet, Currant, Currant Juice, Cinnamon, 
+- Ground Cinnamon, Charlotte, Peach, Peach Smoothie, Pear, Cheese, Pear Pizza, Orange, Orange Cake, Hibiscus Tea, Beer, Chocolate, Corn Flatbread, French-Style Pork, 
+- "Romantic Dinner" Set (Wine, Rose Bouquet, French-Style Pork), "Soul Company" Set (Corn Chips, Beer, Ketchup, Fried Potatoes), Yogurt, Fruit Salad, "Fruit Delight" Set (Fruit Salad + Currant Juice), 
+- Pancake, Bread with Jam, "Champion's Breakfast" Set (Pancake + Bread with Jam + Carrot Juice), Honey, Honey Cake, Chocolate Cookie, "Cozy Tea Party" Set (Tea + Honey Cake + Chocolate Cookie), Fur Coat, 
+- Sweater, "Winter Fashion" Set (Fur Coat + Sweater), Shawarma, Stewed Mushrooms, Bun with Jam, Chak-Chak, Mead
+### Jewelry
+- Iron Chain, 
+- Copper Bracelet, 
+- Silver Brooch, 
+- Silver Necklace, 
+- Gold Earrings, 
+- Gold Ring, 
+- Silver Amethyst Brooch, 
+- Gold Amethyst Ring, 
+- Platinum Pendant, 
+- Platinum Ring, 
+- Platinum Emerald Pendant, 
+- Platinum Diamond Ring
+### Items
+- Axe (6 levels), 
+- Pickaxe (6 levels), 
+- Fishing Rod (6 levels), 
+- Phone, 
+- Farmer's Diary (Book), 
+- Backpack, 
+- Pill, 
+- Floral Wreath, 
+- Soap, Gear, 
+- Bag, 
+- Colorful Hook
+
+## Quests
+### General Principles
+Quests come in two types: main quests, given by key NPCs in their respective locations, and additional (daily) quests to ensure a continuous and varied gaming experience.
+
+Players can receive quests directly from NPCs or through a phone (donation item) with the option to choose an NPC.
+
+If an NPC has a quest, a "!" icon will appear above them. Clicking on the NPC opens a semi-transparent black bar that fully describes the task and its basis. Then, a menu appears.
+
+Quest types may include:
+- Resource gathering (trees, ores)
+- Bringing food/plants (to the warehouse)
+- Giving money
+- Delivering something to someone (letter, gift)
+- Bringing a jewelry item (if the player has it in the workshop, it's deducted from the inventory)
+- Purchasing something on the farm (if the player is at a stage where the NPC requests it)
+
+The menu contains the task, reward, and the option to accept/decline the quest. 
+
+Main NPC quests cannot be declined; they merely describe the quest, provide a task, and await completion.
+
+### Questline
+
+#### Introduction
+
+The player appears in the central part of the village (at the train station), where the head of the village (**Mayor**) is located. The player approaches them, clicks, and a dialogue begins:
+
+1. First Click:
+**Mayor** - Greetings! I am the head of this village of farmers, "village_name". Around these parts, they call me the mayor, but friends call me the retiree!
+
+2. Second Click:
+**Mayor** - Since you're here, I'm sure you want to experience the life of a real farmer. To help you understand how everything works, you have the "Farmer's Diary" in your 9th inventory slot. There, you can find answers to any questions of interest. The information in the diary unfolds as you progress.
+
+3. Third Click:
+**Mayor** - I see you're eager to start. Head east along the path; there you'll see an old barn. Next to it is Granny; she seems to need help, and in general, she'll assist you in your endeavors. She has lived here her whole life.
+
+#### Player approaches **Granny Lyuda**.
+
+**Granny**: Hello, are you the newcomer everyone in the village has been gossiping about? Well, you definitely look like a city person. No worries, we'll toughen you up a bit.
+
+**Granny**: You can start your farmer's journey in our village. To begin with, find some money for wheat, which Konstantinych sells. This way, you'll earn money from the crop. You can use the grass in the barn. **(Quest 1 - Buy the first wheat from Konstantin)**
+
+1. After completing Quest 1:
+
+**Granny**: Oh, thank you! I could use some extra hands. Though I might be stronger than you, old age still makes itself known. 
+
+Listen, during the spring rains, the roof got damaged, well, the barn's roof, not mine. I need help fixing it, as the grass has completely dried out and isn't bringing in any profit. 
+
+Take an axe, go to the forest, and chop down (N amount) oak trees. **(Quest 2 - Bring Granny 20 oak logs)**
+
+5. After completing Quest 2:
+
+**Granny**: Oh, thank you! Now the jokes about the roof falling off should finally end, I hope...
+
+6. Quest 3:
+
+**Granny**: Wow, so you've already bought more than 80 units of wheat. Each crop unlocks a specific processing method after 80 units. What is processing, and why is it needed? Processing is the active circulation of goods to get more benefits from the crop. For example, wheat can be turned into bread.
+To the right of me is a bakery. You can buy it and start making bread. **(Quest 3 - Buy the bakery and give Granny 1 bread)**
+
+7. After Quest 3:
+
+**Granny**: Finally, your possibilities have expanded, and the game has become more diverse for you.
+
+8. Quest 4:
+
+**Granny**: Now you have enough for your first little animal. In our case, it's a chicken. It will lay eggs, which you can either sell or use in further processing.
+Buy the first chicken and bring me 3 eggs for a pie, please. **(Quest 4 - Give Granny 3 eggs)**
+
+9. After Quest 4:
+
+**Granny**: I'm very grateful; you've helped out an old lady!
+
+10. Quest 5:
+
+**Granny**: Go to our fisherman; perhaps you'll find something else interesting besides farming. Try your hand at fishing; who knows, maybe it'll work out for you.
+
+Walk straight from the barn until the very end, then turn right. Our local fisherman is standing there. Honestly, he's quite a catch; you'll recognize him right away. 
+
+Too bad a berry like me isn't to his taste. (**Quest 5 - Find the fisherman Henry**)
+
+11. Quest 6:
+
+**Fisherman Henry**: Greetings, [player]! I've already heard about you. Rumors spread quickly in our village.
+
+Henry: Want to try your hand at fishing? Come on, I'll show you how it's done. (teleports the player to fishing spot) [provides fishing guide]
+
+12. After catching the first fish:
+
+**Henry**: That's how it all happens. If you enjoy it, feel free to come by more often. It's quite a profitable venture. 
+
+**(Quest 6 - Catch the first 5 fish)**. After completing the quest (catching the fifth fish), Henry teleports the player to his farm and gives the next quest.
+
+13. Quest 7:
+
+**Henry**: Catch me a couple of buckets of fish (20). Everyone in my family loves seafood. **(Quest 7 - Catch 20 fish)**.
+
+**Henry**: Thank you so much; this will last us for a month. May Poseidon bless you for this service.
+
+14. Quest 8:
+
+**Henry**: A bit further from me is my friend, neighbor, comrade, and brother - Koryagin. He needs help, but today I wanted to go fishing.
+ Go to him, ask what he wanted. Maybe your help will be enough.
+
+- (after completing, triggers 1 random positive event according to the season) **(Quest 8 - Find Koryagin)**. 
+
+After this dialogue, the player is allowed to teleport home from Henry.
+
+15.  Quest 9:
+
+**Koryagin**: Hey, hello! Did Henry send you? That lazy squid! Probably avoided some nonsense again.
+
+**Koryagin**: Well, if they sent you, there's nothing to be done. You're quite a weakling... Hope you can handle it; the job is not an easy one. Ha-ha-ha, got it? Kind of heavy, ha-ha.
+
+I deal with transporting goods from our village to the city, and I need help unloading. I can do it myself, but I want to see what city slickers like you can do.
+
+**Koryagin**: What's with the hesitation?! Get on the bus, it's near the house, and let's go! [provides guide on cargo transportation] **(Quest 9 - Transport the first cargo)**
+- (after completion, grants a 1.2x cargo transportation speed boost for an hour)
+
+16. Quest 10:
+
+**Koryagin**: Unload 25 crates and distribute them among the warehouses. Be careful with the cargo, possum. **(Quest 10 - Transport 25 cargos)**
+
+**Koryagin**: You've become a bit stronger; I even respect you a little, rooster. Now you're ready to watch over this farm! I can give you a couple of useful tips for the road.
+
+**Koryagin**: For example, you can move around the farm not only on foot, because I see it's a bit challenging for you. You can take any animal (button X) and ride on it. If you get lost somewhere, there's a shortcut to return to your farm (button Y). And if, by any chance, you manage to get lost here, you can use the map you have (**button M**).
+
+#### End
+- After completion of the last questline, provides a game week (7 hours) without negative events
+
+## Mounts and Perks
+
+### Mounts
+
+1. **Horse**: Obtained from a wandering merchant who appears on the farm with a low chance (3%, checked at the beginning of each day). 
+
+The merchant gives a quest, and upon completion, the player receives a horse. The merchant stops spawning after the player obtains a horse.
+
+**Merchant's Quest**:
+
+Greetings, landowner! I am a wandering merchant, roaming the world to make my fortune. Listen, on your farm, there is a forest with mines, and I didn't bring any tools for this journey. 
+
+So, I propose a deal: gather resources for me, and I'll give you my horse to make it easier for you to move around your lands!" **(Quest - Deliver 250 birch, 100 oak, 300 stone, 100 coal)**
+
+2. **Mule**: Given to the player at the beginning of the game. Slower than other mounts.
+
+3. **Pig**: Appears after the player buys 5 pigs.
+
+### Perks
+In the workshop, there will be a separate section for perks that players can acquire using resources.
+
+#### Tool Perk (Axe, Pickaxe): 
+
+Double Yield - Grants a chance to harvest 2 resources instead of one. Can be upgraded 5 times at a 4% increase each. 
+
+Each upgrade is available at every 10 levels of progress in lumberjacking or mining. (New upgrade becomes available after the previous one; however, it won't allow upgrades if the player doesn't have the required tool according to the check.)
+
+- +4%: 100 coal / 200 oak (available immediately)
+- +4%: 15 iron / 400 birch (requires a tool with 10 levels of work)
+- +4%: 20 silver / 600 spruce (requires a tool with 20 levels of work)
+- +4%: 25 gold / 800 dark oak (requires a tool with 30 levels of work)
+- +4%: 30 titanium / 1200 tropical wood (requires a tool with 40 levels of work)
+
+#### Mount Speed Boost (All Mounts): 
+
+Enhanced Horseshoes - Grants mounts an increased speed of 10% per upgrade. (New upgrade becomes available after the previous one.)
+
+- +10%: 20 iron
+- +10%: 25 copper
+- +10%: 30 silver
+- +10%: 35 gold
+- +10%: 40 platinum
+
+## Tools
+
+- Players have three tools: an axe, a pickaxe, and a fishing rod. The axe and pickaxe are given from the start, while the player purchases the fishing rod from the blacksmith's shop.
+
+- When a player reaches every 10th level of the corresponding skill (10, 20, 30, 40, 50), the tool can be upgraded in the workshop using money and time. 
+
+- Upgrades to tools affect the types of blocks obtained by the axe and pickaxe, while upgrading the fishing rod allows catching new types of fish. 
+
+- Tools can only be upgraded after reaching the required skill level. The player enters the workshop, spends money, and waits for a specific time to upgrade the tool. 
+
+- When a player submits a tool to the workshop, the tool temporarily disappears from their inventory and returns improved after the upgrade time has passed.
+
+
+
+
+
