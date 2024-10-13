@@ -673,26 +673,6 @@ When the player clicks on the NPC, a menu pops up, and the player enters the nic
 
 After that, the player is teleported onto the bus, the screen darkens, and then the player appears on the other person's farm near the bus NPC.
 
-## Events
-
-1) Drought (summer, autumn) - Reduces passive income from crops by 50%. To remove this effect, the player needs to provide a bucket of water to each NPC near the garden beds.
-2) Morning dew (summer, spring) - Increasing grass cutting income by 25%
-3) Blossoming (spring, summer) - Increasing crops passive income by 50%
-4) Muck (spring, summer, autumn) -  The player becomes dirty, every NPC will refuse to engage in conversation until they immerse themselves in water and clean up.
-5) Drowned (spring, summer, autumn) -  If the player stays in the water for too long, they become drowned. To remedy this, they need to spend some time out of the water.
-6) Bustle (spring, summer) - Animals producing products in x2 speed, increasing their passive income by 50%.
-7) Famine (year-round) - Animals become hungry, ceasing product production and reducing passive income by 50%. To rectify this, the player needs to provide a bowl of food to every NPC near them.
-8) Flu (winter) - if the player is outdoors, there is a chance of getting the Flu event (formula with muck, NPCs don't interact with the player). To remove: enter the house, spend 4 in-game hours in the house (10 minutes real-time). 
-9) Claustrophobia works the same way as the flu, but if the player is indoors. To remove, stand outside for 4 in-game hours.
-10) Hoarfrost (winter) - grass gives x3 money. Can drop from 4 a.m. to 12 p.m. in real life (same as morning dew, but in winter).
-11) Malfunction (year-round) - a random production branch breaks, the event does not stack. Completely stops a specific production. The debuff is fixed if the player takes a wrench from the granny and clicks on the NPC.
-12) Taxation (year-round) - once every 30 hours of online play, 40% of the balance will be deducted from the player.
-13) Hour of Reckoning (year-round) - The player needs to pay 10x of his passive income to continue playing.
-14) Productivity (year-round) - increases processing speed and plant production speed by 20%.
-15) Strike (year-round) - reduces processing and plant production speed by 50%. To get rid of the event, talk to NPCs in a randomly set order. 
-
-(Trying to talk to an NPC out of turn will make them send you away, for example: "I don't want to talk to you until you settle things with others.")
-
 ## Items
 
 **Axe (Tree cutting)** - issued immediately.
