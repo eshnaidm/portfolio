@@ -430,7 +430,7 @@ Before the first rebirth, the player rank is **F**. After each rebirth, it chang
 
 Above SSS, there will be no ranks, but the player will still progress by earning achievements and increased stats. Players can reach the rank **SSS+** through rebirths.
 
-# Local Worlds Game Mode
+# Game walkthrough - Local Worlds
 
 ## Overview
 The mode will consist of local locations that players will gradually progress through, farming damage (similar to SAO). 
@@ -495,3 +495,141 @@ On the main location (Lobby), the leaderboards will display rankings for:
   - Allows players to break a rune into 20 shards.
   - Allows rune removal from an item (if done without donation, the rune will not be returned, leaving just the item).
   - Enables players to insert a rune into either armor or weapons.
+
+# Mob Locations
+
+To progress through each location, players must complete all kill quests given by the NPCs present.
+
+## NPC Mechanics
+When players right-click on an NPC, a dialogue window will appear, explaining the task at hand, with two options to choose from:
+
+- **Accept Quest**: Players accept the quest and begin the kill mission for a specific number of mobs in the location.
+  
+- **Leave**: The dialogue closes, allowing players to approach the NPC at any other time to take the quest.
+
+**Example**: 
+> **NPC Desertor**: "Greetings, warrior! There’s a small group of pirates further down the road looking for me. Go deal with them, and I promise you a valuable reward!"
+
+Upon completing the task, players receive their reward immediately. To take the next task, players must approach the NPC again.
+
+After completing all the tasks from the NPC, players can continue to the next location.
+
+## Thematic Locations
+Every five locations leading to the dungeon will have the same theme and NPC but different enemies. If there are 40 locations in total, there will be 8 different themes.
+
+Mobs will be spread throughout the locations, similar to how they are in SAO.
+
+## Dungeons
+
+Entrances to the dungeons will be located at the end of every 5th location, appearing as a door or portal.
+
+In the dungeons, players will face waves of all mobs from previous locations, but they will be stronger.
+
+These dungeons are designed exclusively for solo content.
+
+### Dungeon Progression
+Dungeons will follow this principle:
+
+1. The battle starts with the first wave, and the player's objective is to kill all the mobs.
+2. After defeating the first wave, a loot chest will spawn. The chest will contain currency, experience, and loot from the mobs.
+3. Players have a choice:
+   - **Continue Fighting**: If they choose to continue, the second wave will spawn. If they die during this fight, they will lose the loot from the chest.
+   - **Take Loot and Leave**: If players decide to leave, they will receive the loot and return to the entrance of the location, having the option to retry the dungeon.
+
+Completing the dungeon unlocks access to the next thematic area. Players can run dungeons an infinite number of times.
+
+## Description of Farming Locations
+
+### Location 1 - Beach
+- **Friendly NPC**: Desertor
+- **Possible Enemies**: Pirate Recruit, Sailor
+- **Respawn Time for Each Enemy**: 5 seconds
+
+### Location 2 - Pirate Camp
+- **Friendly NPC**: Desertor
+- **Possible Enemies**: Pirate Raider, Gunner
+- **Respawn Time for Each Enemy**: 10 seconds
+
+### Location 3 - Coastal Village
+- **Friendly NPC**: Desertor
+- **Possible Enemies**: Smuggler, Navigator
+- **Respawn Time for Each Enemy**: 15 seconds
+
+### Location 4 - Sunken Ship
+- **Friendly NPC**: Desertor
+- **Possible Enemies**: Bosun, Quartermaster
+- **Respawn Time for Each Enemy**: 20 seconds
+
+### Location 5 - Pirate Ship
+- **Friendly NPC**: Desertor
+- **Possible Enemies**: Navigator, First Mate, Boarder
+- **Respawn Time for Each Enemy**: 25 seconds
+
+### Location 5* - Cabin of the Broken Bone
+- **Friendly NPC**: None
+- **Wave 1**: Enhanced Pirate Recruits, Sailors
+- **Wave 2**: Enhanced Pirate Raiders, Gunners
+- **Wave 3**: Enhanced Smugglers, Navigators
+- **Wave 4**: Enhanced Bosuns, Quartermasters
+- **Wave 5**: Enhanced Navigators, First Mates, Boarders
+- **Boss**: Pirate Chief "Broken Bone"
+
+# General Location - Fighting Pit
+
+The **Fighting Pit** will feature a large **ROUND arena** designated as a PvP zone.
+
+The location will be barrier-free and divided into different zones; the further players move from the center, the stronger the mobs and bosses become. Consequently, the loot quality will also increase.
+
+Upon entering each new zone, a warning will display the recommended rebirth level for that area.
+
+In each zone, there will be one boss, different mob levels, and various activities.
+
+## Activities in the Fighting Pit
+
+- **Special Mobs**
+- **Events**
+- **Boss Fights**
+- **Contracts**
+- **PvP**
+
+### Special Mobs
+The Fighting Pit will feature enhanced mobs randomly selected from all local locations. The further players venture from the center, the stronger the mobs will be.
+
+Mobs will be randomly positioned, remain stationary, and only move toward the player who attacks them.
+
+### Events
+Events will spawn randomly every **30 minutes** (the timer starts from the end of the previous event), and each event will offer specific rewards. The number of winners depends on the event.
+
+Event locations are already mapped out, and a timer displaying the time until the next event will appear at the top of the screen.
+
+- **King of the Hill**: Active for 10 minutes. Players must climb to a platform on the hill. Players earn points for every second they stay on the platform. At the end of the event, the top three players with the highest points receive rewards.
+  
+- **Double Drop**: Activates for 10 minutes, doubling the drop rate from mobs.
+  
+- **Gold Rush**: Players earn double gold for killing mobs and other players. Active for 10 minutes.
+  
+- **Team Deathmatch**: Players in the pit are split into two teams. The team with the most kills in 15 minutes wins a reward.
+  
+- **Mystical Chest**: A mystical chest with rare loot spawns somewhere on the map. The chest is active for 5 minutes.
+  
+- **Giant**: A giant spawns in the center of the arena with a massive amount of health. Players who deal the most damage receive rewards. All participants will also receive smaller rewards.
+  
+- **Parkour**: A parkour challenge activates in a designated area on the map. The first three players to complete it receive rewards. The event ends once three players finish or after 30 minutes, whichever comes first.
+
+### Bosses
+Each circular zone will contain at least one boss. The further from the center, the more difficult the boss will be.
+
+### Contracts
+Players can receive a contract from an NPC in the Fighting Pit once an hour for a random player. If they successfully eliminate the target, they will earn gold and rare items.
+
+Players should have approximately equal rebirth levels and ratings compared to the target of the contract.
+
+If the player exits the game, the contract is canceled.
+
+The target player must remain unaware of the contract.
+
+Contract rerolls can be purchased with in-game currency.
+
+### PvP
+#### Rating System
+A rating system will be implemented for player kills. The exact mechanics are yet to be defined, but it will likely award **3 points for kills** and **-1 point for deaths**.
