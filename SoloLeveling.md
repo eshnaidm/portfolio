@@ -183,10 +183,10 @@ Consumables will be provided in the backpack in the form of explosive potions or
 
 ### Shop Slots:
 
-1. **Constricting Potion (Explosive)** - Steal from KSK
+1. **Constricting Potion (Explosive)** - Potion that stops all of the enemies in its radius, making them immobile and stunned.
    - 10 pieces per day
 
-2. **Binding Potion (Explosive)** - Steal from KSK
+2. **Binding Potion (Explosive)** - Potion that binds all of the enemies in its radius, passing the incoming damage to all of the binded enemies
    - 10 pieces per day
 
 3. **Instant Heal Potion I/II/III/IV (Explosive)**:
