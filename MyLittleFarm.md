@@ -948,7 +948,237 @@ Enhanced Horseshoes - Grants mounts an increased speed of 10% per upgrade. (New 
 
 - When a player submits a tool to the workshop, the tool temporarily disappears from their inventory and returns improved after the upgrade time has passed.
 
+# Daily Quest System
 
+Daily quests were part of last season's design document and are carried over unchanged into this season.
 
+---
+
+## General Overview
+
+The system involves villagers who are related to the NPCs on the farm.
+
+Each villager will have their own route (with time intervals between points ranging from 30-120 seconds) and variations of quests.
+
+Each NPC will have unique quests.
+
+The quests will be divided into two categories: **seasonal** and **holiday**. Additionally, a special guest will randomly visit once per in-game year, offering special rewards.
+
+Players will not receive quests for items that they have not yet unlocked.
+
+Quests refresh once every in-game week (7 real hours).
+
+There will be 30 total villagers, but every 2 seasons (fall-winter, spring-summer) there will be a rotation of villagers. Only 12 villagers can be present on a farm at a time, and every 2 seasons, a random selection of villagers will be rotated from the pool. There will be 3 special guests.
+
+Villagers cannot appear in two consecutive rotations (they can only return after skipping one).
+
+The same quest cannot appear twice in a row for the same villager (it can only appear after skipping one).
+
+---
+
+## Seasonal Quests
+
+Seasonal quests are the regular version of the quests. Each NPC will have a quest related to their role on the farm and their connection to the main characters, as well as the current rotation (2 seasons).
+
+Each villager will have a pool of 4 quests per rotation, one of which will be chosen at random.
+
+For example, Vanechka’s wife visits the farm in winter. Since she comes from a warm place, she will need a sweater and some hibiscus tea.
+
+---
+
+## Holiday Quests
+
+Holiday quests will appear one in-game week before the end of any holiday (for example, if the farm's birthday ends on September 19, and starts on September 16, the holiday quests will appear on September 13).
+
+For each holiday, each villager will have a pool of 2 quests.
+
+For example: After the New Year’s celebration, Andrew noticed that he’s short on eggs and cheese for his holiday salads.
+
+---
+
+## Special Guests
+
+Once per in-game year, one of the three special guests will visit the farm.
+
+The special guest will stay on the farm for one in-game week.
+
+The player must be online for the guest to appear.
+
+Special guests will offer unique quests (not just collecting items) and will offer different rewards as well.
+
+Their arrival does not cancel other quests; their quests will be displayed separately.
+
+They will not move around the farm but will stand in a fixed location.
+
+A special guest cannot appear two in-game years in a row (only after skipping one).
+
+Each special guest will have a pool of 3 quests.
+
+---
+
+## Types of Quests
+
+- **Collect items/resources/money:** Example: Turn in 100 iron to an NPC in exchange for a booster; turn in 10 shawarmas, and you’ll get a membership.
+  
+- **Perform an action:** Example: Chop down 100 trees. Mow 500 grass. Brew a potion. Catch 10 fish.
+
+- **Deliver an item:** Example: Take a shawarma and deliver it to Konstantin, or grab a fur coat and deliver it to Natasha.
+
+# Jewelry Mechanics Update from 11.10.2024
+
+Jewelry can no longer be sold - they are now meant to be gifted to NPCs responsible for purchasing plants (or trees). You can gift as many pieces of jewelry as you want, but each subsequent jewelry given to the same NPC has a diminishing effect.
+
+To gift jewelry, you must own at least 1 purchased crop of the corresponding type.
+
+Some jewelry has been removed. Here is the updated list of jewelry:
+
+- Copper Bracelet
+- Silver Brooch
+- Gold Earrings
+- Amethyst Brooch
+- Emerald Pendant
+- Diamond Ring
+
+---
+
+## Bonus List for Gifting Jewelry to NPCs:
+
+- **Silver Brooch** - Gives a chance for the plant (and water reserves in the barrel, if any) to resist drought – improves up to 40%.
+  
+- **Gold Earrings** - Speeds up the production time of the associated crop (e.g., wheat will be produced faster than once per minute) – up to a -25% reduction in production time.
+  
+- **Amethyst Brooch** - Reduces the cost of plants of that crop type, without negatively affecting the farm's value – up to a 10% discount.
+  
+- **Emerald Pendant** - Increases the passive income from that crop – up to +10%.
+  
+- **Diamond Ring** - Gives a chance for the crop to spawn instead of grass. When broken, it gives money like grass, but additionally grants the player an amount equal to the income from that crop – up to 2%.
+
+---
+
+## Copper Bracelet Special Effect:
+
+When given to a specific NPC, it provides a buff to the entire farm. Here is a list of crops and their corresponding buffs:
+
+- **Wheat** - Increases income from grass - up to +5%.
+  
+- **Potatoes** - Increases player movement speed - up to +10%.
+  
+- **Cucumbers** - Reduces the cost of upgrading tools - up to -60%.
+  
+- **Sugar Cane** - Increases income from cargo - up to +10%.
+  
+- **Tea Leaf** - Chance to get twice the materials when mining ore - up to 20%.
+  
+- **Onions** - Chance to get twice the amount of wood when chopping trees - up to 20%.
+  
+- **Grapes** - Increases the chance of positive events - up to +10%.
+  
+- **Raspberries** - Reduces the chance of negative events - up to -5%.
+  
+- **Cotton** - Reduces the time needed to combo grass - up to -20%.
+  
+- **Strawberries** - Reduces smelting time - up to -20%.
+  
+- **Carnations** - Increases digging speed - up to +10%.
+  
+- **Flax** - Reduces processing time - up to -10%.
+  
+- **Corn** - Reduces the production time of jewelry - up to -15%.
+  
+- **Sunflower** - Increases the chance of the "Productivity" event - up to +20%.
+  
+- **Cocoa Beans** - Increases animal product production speed - up to -10% from production time.
+  
+- **Hops** - Reduces the money required to pay off taxes - up to -30%.
+  
+- **Rose** - Increases passive income - up to +5%.
+  
+- **Tomatoes** - Further increases income from all fish processing - up to +20%.
+  
+- **Chrysanthemums** - Increases the chance of the "Bloom" event - up to +20%.
+  
+- **Blueberries** - Reduces the average time needed to catch fish - up to -20%.
+  
+- **Brown Mushroom** - Increases the chance of the "Mushroom Rain" event - up to +20%.
+  
+- **Rice** - Reduces the amount of experience needed to level up professions - up to -15%.
+  
+- **Cinnamon** - Reduces the time required to cure the "Flu" - up to -30%.
+  
+- **Apple** - Increases the average cargo weight per area - up to +20%.
+  
+- **Peach** - Reduces the prices of all crops (again, without negatively affecting the farm's value) - up to -5%.
+  
+- **Pear** - Increases the chance of combo-grass triggering - an additional 1% chance.
+  
+- **Orange** - Increases the value of processed products - up to +15%.
+  
+- **Coconut** - Grants a chance to catch 2 fish at once - up to +30%.
+
+The more jewelry of a specific type that an NPC receives, the higher the chance for the buff to increase. The chance grows with each additional piece of jewelry (geometric progression).
+
+---
+
+## Explanation of How the Buff Chance Increases
+
+The chance grows following a geometric progression formula. It is calculated using the following simple formula:
+
+In this formula:
+- **b₁** is the first term of the sequence, or the buff granted by the very first piece of jewelry given of that type.
+- **q** is the multiplier by which the buff increases with each subsequent piece of jewelry of the same type given to the NPC.
+- **n** is the number of jewelry pieces given to that NPC.
+
+Let’s walk through an example:
+
+Suppose we want to calculate the buff provided by Copper Bracelets gifted to an NPC in charge of wheat (let’s call him Konstantin). We’ll assume that the first bracelet gives a 1% buff to grass income (this is **b₁**), and each subsequent bracelet gives 0.8 times the previous one (so the second bracelet gives 0.8%, the third gives 0.64%, and so on). In this case, 0.8 is **q**. Finally, we just need to substitute **n** – the number of Copper Bracelets given to Konstantin – to calculate the total percentage increase in grass income.
+
+---
+
+## Configuration and Data Storage
+
+In the config files, two values will be stored, which will vary for each NPC and each type of jewelry:
+- **b₁** (the first buff).
+- **q** (the buff multiplier).
+
+As for **n** (the number of jewelry pieces given), it will be stored in the database and will differ for each player, depending on how many pieces of jewelry they have gifted. **n** will be different for each piece of jewelry and each NPC (leading to 28 * 6 values per player).
+
+---
+
+## Jewelry Crafting and Interaction
+
+The ability to sell jewelry should be removed. Now, jewelry can only be crafted. When interacting with an NPC while holding the sprint button, a menu will appear where the player can choose how many jewelry pieces of each type they want to gift.
+
+# Daily Quests
+
+1. **Grass income x3 for 1 hour**  
+2. **Bloom event** for 20/25/30/40/50 minutes  
+3. **Instant Money** = income for 20/25/35/45/55 minutes  
+4. **No Seasonal Negative Effects** for 20/25/35/45/55 minutes  
+5. **Player cannot get tired** while resource gathering for 30/40/50/65/80 minutes  
+6. **Processing speed increased** by 10%/14%/16%/20%/24% for 1 hour  
+7. **3 daily quests available** instead of one  
+8. **Plant export speed increased** by 8%/12%/14%/17%/22% for 2 hours  
+9. **Player gets Speed 2** for 1/1.5/2/2.5/3 hours  
+10. **Bloom** for 30/40/50/60/75 minutes  
+11. **Player receives one of three resources** in a certain amount to choose from (items are likely to be equal to player progress. This can be a resource for jewelry, fish, or something from animals or plants).  
+12. **Instant Money** = income for 120/160/180/210/240 minutes  
+13. **For the next 35/45/60/75/90 minutes** there is a 5% chance to double resources, even in fishing  
+14. **Processing speed increased by 25%** for 40/60/70/85/100 minutes  
+15. **Player chooses one of 3 garden beds** to get x2 income from one of them for the next 160/200/260/340/400 minutes  
+16. **Plant export speed increased by 20%** for 120/160/200/250/300 minutes  
+17. **Income x2** for the next 200/240/280/300/360 minutes (only income)  
+18. **Grass x3** for 60/80/100/120/140 minutes  
+19. **Player gains flight** for 8/10/11/12/14 hours  
+20. **Player receives one of three resources** in a certain amount to choose from (items are likely to be equal to player progress. This can be a resource for jewelry, fish, or something from animals or plants).  
+21. **No negative effects, bad grass, or unlucky fishing** for the next 1/1.5/2/3/4 hours  
+22. **Chance for a positive event increased by 50%** for 3/3.5/4/5/6 hours  
+23. **Player gets Speed 2 and Jump Boost 1** for 10/11/12/13/14 hours  
+24. **Instant Money** = income for 3/3.5/4/5/6 hours  
+25. **Processing speed increased by 25%** for 3/3.5/4/5/6 hours  
+26. **Player can choose from 3 possible daily quests**  
+27. **A random positive event** available during the season is triggered  
+28. **Animal export speed increased** by 12%/15%/18%/20%/24%  
+29. **Choose from 3 processing buildings**, and select one where processing speed is boosted by 20%/25%/30%/40%/45%  
+30. **Customization crate for the farm**
 
 
