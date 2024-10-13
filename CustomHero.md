@@ -713,12 +713,12 @@ The duel begins only when the ability owner strikes someone (works as an anti-ki
 
   For each damage dealt, enemies receive 20% of the inflicted damage as reflected damage. This percentage can be increased through additional skills and effects.  
 
-# 13. Berserk (Tank)
+## 13. Berserk (Tank)
 
-## Description
+### Description
 A mad and untamable warrior who enters battle with rage and cruelty, caring little for his own life.
 
-## Characteristics
+### Characteristics
 
 | Characteristic         | Value   |
 |------------------------|---------|
@@ -727,7 +727,7 @@ A mad and untamable warrior who enters battle with rage and cruelty, caring litt
 | Movement Speed         | 210     |
 | Regeneration           | 1.66    |
 
-## Attributes
+### Attributes
 
 | Attribute                | Increase   |
 |--------------------------|------------|
@@ -735,9 +735,9 @@ A mad and untamable warrior who enters battle with rage and cruelty, caring litt
 | Health Increase          | 2.09       |
 | Regeneration Increase     | 0.08       |
 
-## Standard Skills
+### Standard Skills
 
-### Counter Spiral [Passive]
+#### Counter Spiral [Passive]
 
 #### Ability Description
 - **Type**: Passive
@@ -749,7 +749,7 @@ A mad and untamable warrior who enters battle with rage and cruelty, caring litt
 
 Upon receiving damage, the player has a 20% chance to perform a counterattack, dealing 2 pure damage to all entities within a radius of 1.5 blocks around him.
 
-### Shard: Blade [Passive]
+#### Shard: Blade [Passive]
 
 #### Ability Description
 - **Type**: Passive
@@ -762,9 +762,9 @@ If an enemy player has less than 15% health, the axe strike will kill the enemy 
 
 ---
 
-# 14. Gargoyle (Summoner)
+## 14. Gargoyle (Summoner)
 
-## Characteristics
+### Characteristics
 
 | Characteristic         | Value   |
 |------------------------|---------|
@@ -773,14 +773,14 @@ If an enemy player has less than 15% health, the axe strike will kill the enemy 
 | Movement Speed         |         |
 | Regeneration           |         |
 
-## Attributes
+### Attributes
 
 | Attribute                | Increase   |
 |--------------------------|------------|
 
 Every 5 seconds, the player generates one shield charge (up to a total of 3), increasing damage resistance by 8% for each charge. Upon taking damage, the player loses 1 shield charge. [Passive]
 
-### Ability: Summon 2 Bats
+#### Ability: Summon 2 Bats
 
 #### Ability Description
 - **Type**: Ability
@@ -798,9 +798,9 @@ Every 5 seconds, the player generates one shield charge (up to a total of 3), in
 
 ---
 
-# 15. Zombie (Summoner)
+## 15. Zombie (Summoner)
 
-## Characteristics
+### Characteristics
 
 | Characteristic         | Value   |
 |------------------------|---------|
@@ -809,7 +809,7 @@ Every 5 seconds, the player generates one shield charge (up to a total of 3), in
 | Movement Speed         |         |
 | Regeneration           |         |
 
-## Attributes
+### Attributes
 
 | Attribute                | Increase   |
 |--------------------------|------------|
@@ -843,12 +843,12 @@ The player instantly restores 1 health for each creature within a 5-block radius
 
 ---
 
-# 16. Werewolf (Summoner)
+## 16. Werewolf (Summoner)
 
-## Description
+### Description
 Possesses sharp claws, strong jaws, and unparalleled endurance, allowing it to pursue its prey in the most challenging conditions.
 
-## Characteristics
+### Characteristics
 
 | Characteristic         | Value   |
 |------------------------|---------|
@@ -857,7 +857,7 @@ Possesses sharp claws, strong jaws, and unparalleled endurance, allowing it to p
 | Movement Speed         |         |
 | Regeneration           |         |
 
-## Attributes
+### Attributes
 
 | Attribute                | Increase   |
 |--------------------------|------------|
@@ -898,12 +898,12 @@ Summons two wolves that possess invisibility (invisibility is disabled upon atta
 
 ---
 
-# 17. Illusionist (Summoner)
+## 17. Illusionist (Summoner)
 
-## Description
+### Description
 A master of deception and the art of creating illusions, capable of altering reality and confusing enemies.
 
-## Characteristics
+### Characteristics
 
 | Characteristic         | Value   |
 |------------------------|---------|
@@ -912,7 +912,7 @@ A master of deception and the art of creating illusions, capable of altering rea
 | Movement Speed         | 190     |
 | Regeneration           | 1.3     |
 
-## Attributes
+### Attributes
 
 | Attribute                | Increase   |
 |--------------------------|------------|
@@ -920,9 +920,9 @@ A master of deception and the art of creating illusions, capable of altering rea
 | Health Increase          | 1.64       |
 | Regeneration Increase     | 0.06       |
 
-## Standard Skills
+### Standard Skills
 
-### Double [Ability]
+#### Double [Ability]
 
 #### Ability Description
 - **Type**: Usable
@@ -967,11 +967,9 @@ Upon hitting an enemy, the hero gains Speed 3 for 2 seconds (illusions also inhe
 | Illusion Damage        | 22%     |
 | Damage to Illusions    | 650%    |
 
----
+## 18. Hunter (Summoner)
 
-# 18. Hunter (Summoner)
-
-## Characteristics
+### Characteristics
 
 | Characteristic         | Value   |
 |------------------------|---------|
@@ -980,7 +978,7 @@ Upon hitting an enemy, the hero gains Speed 3 for 2 seconds (illusions also inhe
 | Movement Speed         |         |
 | Regeneration           |         |
 
-## Attributes
+### Attributes
 
 | Attribute                | Increase   |
 |--------------------------|------------|
@@ -1005,12 +1003,12 @@ The player summons a helper boar. Its poisonous attacks inflict slowness, poison
 | Effect Duration        | 3 seconds   |
 | Damage                 | 1 health    |
 
-# 19. Faceless (Warrior)
+## 19. Faceless (Warrior)
 
-## Description
+### Description
 A faceless warrior capable of manipulating time and space, able to temporarily stop it with a snap of his fingers.
 
-## Characteristics
+### Characteristics
 
 | Characteristic         | Value       |
 |------------------------|-------------|
@@ -1019,7 +1017,7 @@ A faceless warrior capable of manipulating time and space, able to temporarily s
 | Movement Speed         | 220         |
 | Regeneration           | 0.95        |
 
-## Attributes
+### Attributes
 
 | Attribute                | Increase   |
 |--------------------------|------------|
@@ -1027,9 +1025,9 @@ A faceless warrior capable of manipulating time and space, able to temporarily s
 | Health Increase          | 2.32       |
 | Regeneration Increase     | 0.08       |
 
-## Standard Skills
+### Standard Skills
 
-### Time Stop [Passive]
+#### Time Stop [Passive]
 
 #### Ability Description
 - **Type**: Passive
