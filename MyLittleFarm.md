@@ -557,20 +557,122 @@ From this, players will receive a local boost +0.1x from every 10th candy in the
 
 The maximum number of candies a player can collect in the basket is 100. When a player gives a candy, they get +2% to the processing speed (give all 10 candies - get +20% to the speed).
 
-## Square
+#### 8. Lumberjack Day (September 21, lasts 3 days)
+On the Square, a **lumberjack NPC** appears with a house.
 
-Square - a place where players can gather. In winter, there will be a hockey rink on the square, and the rest of the time, there will be a football field instead. 
+- Players do not experience fatigue while chopping wood.
+- Tool upgrades are twice as fast.
 
-Players can play hockey/football. There will be benches where players can sit (two at a time). There will be mini-games to pass the time for fun.
+The player's task is to bring as much wood as possible to the NPC. There are **5 stages**:
+1. 125 wood
+2. 250 wood
+3. 500 wood
+4. 1250 wood
+5. 2500 wood
 
-### List of games on the square:
+With each stage, the duration of positive effects on the farm increases by **15%, 25%, 35%, 45%, 60%** until the end of the event. After the event ends, all buffs are removed, but for the next **7 in-game days**, a buff is given that increases the chance of a positive event based on the player's progress:
+- 5%, 10%, 15%, 20%, 25%.
 
-1) Checkers 1vs1
-2) Whack-a-Mole (Leaderboard for moles per game)
-3) Parkour (Leaderboard by time, disables fly in the area)
-4) Dropper (Disables fly in the area)
-5) Races around the square (for 4 players)
-6) Tic-Tac-Toe
+---
+
+#### Miner Day (August 2, lasts 3 days)
+A **decorative mine** and a **miner NPC** appear on the Square.
+
+- Players do not experience fatigue while mining with a pickaxe.
+- Tool upgrades are twice as fast.
+
+The miner allows trading of ores (all except stone) at the following exchange rates:
+- **Stone to ore:** 10:1 (e.g., 10 stone → 1 gold ore)
+- **Ore to stone:** 1:10 (e.g., 1 gold ore → 10 stone)
+- **Ore to ore:** 6:1 (e.g., 6 iron ore → 1 gold ore)
+
+**Important:** Both types of ores must be available to the player.
+
+When breaking ores, there is a **5-10% chance** to receive a shard of the same ore. When 10 shards are collected, they automatically turn into a finished metal.
+
+- Jewelry crafting is **20% faster** during the event.
+- Building construction requires **10% fewer resources**.
+
+---
+
+#### Fisherman Day (July 9, lasts 5 days)
+A **statue of a fisherman** appears on the Square.
+
+- No trash is caught during fishing.
+- Two new catches are added: 
+  - **Golden Fish** (0.5% chance), which grants **2x fish** for the rest of the event.
+  - **Guardian** (0.2% chance), which becomes a **mount** for the player.
+
+**Rewards based on the number of fish species caught during the event:**
+- **6-15 species:** 1.2x income from fish and fish processing sales for **2 real hours** after the event.
+- **16-25 species:** 1.4x income for **2 real hours**.
+- **26-35 species:** 1.6x income for **2 real hours**.
+- **36-45 species:** 1.8x income for **2 real hours**.
+- **46-50 species:** 2x income for **2 real hours**.
+
+
+# Green Peaks Location
+
+The farm will have a unified location that combines active tasks, the square, and all its functionalities from the previous wipe. The name of this location: **Green Peaks**.
+
+## The Square
+The Square is a gathering place for players. During winter, it will feature a hockey field, while at other times, it will be replaced by a football field. Players can play hockey/football (like the DMS in the hub). The square will have **love-seats**, where two players can sit together. There will also be mini-games for players to enjoy and pass the time.
+
+### List of Games on the Square:
+- **Checkers** (1vs1)
+- **Whack-a-Mole** (Top by number of moles hit per game)
+- **Parkour** (Top by time, flight disabled in the zone)
+- **Dropper** (Flight disabled in the zone)
+- **Races around the square** (4 players)
+- **Tic-tac-toe**
+
+In addition, the player will handle cargo transfers on the Square, as the truck and storage warehouses will be located there. The square's layout remains unchanged from the previous wipe.
+
+## Resource Gathering and Mining
+
+The old locations for wood and ore gathering will be replaced by a **common location**, where every block is **local** to each player. This means that even if a block has been broken by one player, another player can still gather it, as blocks are individual to each player.
+
+### Green Peaks Sub-Zones for Wood Gathering:
+1. **Level 0** – The Square
+2. **Level 1** – Oak Meadow (oak + grass field)
+3. **Level 2** – Birch Forest (birch)
+4. **Level 3** – Spruce Thicket (spruce)
+5. **Level 4** – Dark Forest (dark oak)
+6. **Level 5** – Sandy Valley (acacia)
+7. **Level 6** – Tropical Hill (jungle trees)
+
+### Mines
+The mines will no longer be scattered across locations; instead, they will descend deeper with each level.
+
+1. **Level 1** – Coal Mine (Materials: stone, coal)
+2. **Level 2** – Forgotten Mine (unlocks at level 10, Materials: iron, copper)
+3. **Level 3** – Silver Veins (unlocks at level 20, Materials: silver, quartz)
+4. **Level 4** – Shiny Minerals (unlocks at level 30, Materials: gold, amethyst)
+5. **Level 5** – Underground Klondike (unlocks at level 40, Materials: platinum, emerald)
+6. **Level 6** – Lava Archipelago (unlocks at level 50, Materials: titanium, diamond, obsidian)
+
+## Fishing Lakes in Green Peaks
+
+Each sub-zone of Green Peaks, except for the Square, features a lake for fishing.
+
+1. **Lake in Oak Meadow**  
+   Catch: anchovy, sprat, smelt, sardine, herring, crucian carp, perch, ruffe
+
+2. **Lake in Birch Forest** (unlocks at level 10)  
+   Catch: mackerel, pollock, roach, flounder, tench, roach, omul, white-eye
+
+3. **Lake in Spruce Thicket** (unlocks at level 20)  
+   Catch: navaga, blue bream, rudd, pink salmon, carp, ide, common carp, bream
+
+4. **Lake in Dark Forest** (unlocks at level 30)  
+   Catch: coho salmon, pike perch, pike, eel, salmon, burbot, chum salmon, pufferfish
+
+5. **Lake in Sandy Valley** (unlocks at level 40)  
+   Catch: grass carp, black carp, snakehead, halibut, mackerel, catfish, pollock, sea bass
+
+6. **Lake in Tropical Hill** (unlocks at level 50)  
+   Catch: sturgeon, anglerfish, ling, silver carp, paddlefish, swordfish, beluga, tuna
+
 
 ## Daily Login
 
