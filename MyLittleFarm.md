@@ -134,6 +134,272 @@ Also, with a low chance, the player can catch trash that will be worth nothing.
 
 The player enters fishing through the NPC fisherman Henry on their farm, and returns home through NPC fisherman Henry at the fishing spot.
 
+## Weather and New Event System
+
+The farm will now have weather that directly affects the chance of events occurring. The weather consists of two components: **temperature** and **precipitation**.
+
+### Temperature
+The temperature fluctuates between -30 and +30 degrees Celsius depending on the season, with specific ranges for each month. The temperature on a given day is **x**, and it changes with the following probabilities:
+
+- x - 5: 3%
+- x - 4: 5%
+- x - 3: 7%
+- x - 2: 10%
+- x - 1: 15%
+- x: 20%
+- x + 1: 15%
+- x + 2: 10%
+- x + 3: 7%
+- x + 4: 5%
+- x + 5: 3%
+
+If the result of this formula exceeds the temperature range for that month, the temperature changes to the same value but with the opposite sign (for example, if at -28 with a limit of -30 the temperature falls to -32, it becomes -24 instead).
+
+At the start of the next month, the temperature is checked to see if it fits within the range for that month. If not, the temperature is set to the closest value within the range (e.g., the boundary).
+
+Below are the months and their temperature ranges:
+
+- **January**: Upper limit: -5, Lower limit: -30
+- **February**: Upper limit: +5, Lower limit: -20
+- **March**: Upper limit: +10, Lower limit: -10
+- **April**: Upper limit: +15, Lower limit: 0
+- **May**: Upper limit: +20, Lower limit: +5
+- **June**: Upper limit: +25, Lower limit: +10
+- **July**: Upper limit: +30, Lower limit: +15
+- **August**: Upper limit: +25, Lower limit: +10
+- **September**: Upper limit: +20, Lower limit: +5
+- **October**: Upper limit: +15, Lower limit: 0
+- **November**: Upper limit: +10, Lower limit: -5
+- **December**: Upper limit: 0, Lower limit: -25
+
+### Precipitation
+Precipitation has three categories: sunny, cloudy, or precipitation (rain/snow; rain if temperature ≥ 0, snow if temperature < 0). The type of precipitation will be chosen with specific probabilities for each month:
+
+- **January**: Sunny – 30%, Snow – 40%, Cloudy – 30%
+- **February**: Sunny – 20%, Snow/Rain – 40%, Cloudy – 40%
+- **March**: Sunny – 25%, Snow/Rain – 35%, Cloudy – 40%
+- **April**: Sunny – 34%, Rain – 33%, Cloudy – 33%
+- **May**: Sunny – 40%, Rain – 30%, Cloudy – 30%
+- **June**: Sunny – 40%, Rain – 20%, Cloudy – 40%
+- **July**: Sunny – 50%, Rain – 15%, Cloudy – 35%
+- **August**: Sunny – 40%, Rain – 25%, Cloudy – 35%
+- **September**: Sunny – 30%, Rain – 25%, Cloudy – 45%
+- **October**: Sunny – 25%, Snow/Rain – 35%, Cloudy – 40%
+- **November**: Sunny – 20%, Snow/Rain – 50%, Cloudy – 30%
+- **December**: Sunny – 30%, Snow – 30%, Cloudy – 40%
+
+### Special Weather Scenarios
+The probabilities change under the following conditions:
+
+- If it is sunny for 5 days in a row, the next day **cannot** be sunny. 2/3 of the probability for sun shifts to cloudy, and the rest to rain/snow.
+- If it is cloudy for 5 days in a row, the next day **cannot** be cloudy. Half of the probability for cloudy shifts to sunny, and the other half to rain/snow.
+- If there is rain/snow for 5 days in a row, the next day **cannot** have precipitation. 2/3 of the probability for rain/snow shifts to cloudy, and the rest to sunny.
+
+### Event System
+
+Events now have probabilities that depend on both temperature and weather. The chance of an event occurring will be checked every 30 minutes of player gameplay. If an event is triggered, it will appear to the player. After the event ends, there will be a cooldown (which continues even if the player is offline) until the next occurrence of the same event. Some events have durations, while others are removed in special ways.
+
+Some events have a unique system, described individually.
+
+---
+
+## Event List with Probabilities
+
+### Drought
+Reduces crop income by half. To remove it, players must collect water in a bucket and give it to each NPC from whom crops were bought.  
+**Chance**: 5% at 0°C and cloudy weather.  
+Temperature increase of 5°C raises the chance by 1% (e.g., 6% at +5 to +9°C, 7% at +10 to +14°C, etc.).  
+Sunny weather increases the chance by 1.5 times (e.g., 5 x 1.5% at 0 to +4°C).  
+Rain reduces the chance to zero.  
+Below 0°C, the chance is zero.  
+**Cooldown**: 8 in-game days.
+
+### Blooming
+Doubles crop income.  
+**Chance**: 6% at 0°C and cloudy weather.  
+Temperature increase of 5°C raises the chance by 1% (e.g., 7% at +5 to +9°C).  
+Sunny weather increases the chance by 1.25 times.  
+Rain reduces the chance by 4 times.  
+Below 0°C, the chance is zero.  
+**Cooldown**: 8 in-game days.  
+**Duration**: 2 in-game hours to 1 in-game day.
+
+### Morning Dew
+Triples grass income.  
+Special Condition: If triggered, it occurs randomly between 4:00 and 11:00.  
+**Chance**: 3% at 0°C and cloudy weather.  
+Temperature increase of 5°C up to +10 to +14°C raises the chance by 3%.  
+At higher temperatures, the chance decreases by 2%.  
+Above +30°C, the chance is zero.  
+Below 0°C, the chance is zero.  
+Sunny weather reduces the chance by half.  
+Rain increases the chance by double.  
+**Cooldown**: 7 in-game days.  
+**Duration**: 4 to 12 in-game hours.
+
+### Dirty
+Removes passive income. To remove it, the player must take a shower in their house.  
+**Chance**: 10% at 0°C and cloudy weather.  
+Temperature increase of 5°C reduces the chance by 1%.  
+Below 0°C, the chance is zero.  
+Sunny weather reduces the chance by half.  
+Rain increases the chance by 1.5 times.  
+**Cooldown**: 6 in-game days.
+
+### Drowning
+Removes passive income. This event counters the "Dirty" event, triggered if the player spends too long in the shower.  
+**Chance**: Checked every second when the player stands in the shower:  
+- 30-45 seconds: 10%
+- 45-60 seconds: 15%
+- 60-120 seconds: 20%
+- 120-180 seconds: 25%
+- 180+ seconds: 100%
+
+The event is removed when the player exits the shower, with the same probabilities.  
+**No cooldown.**
+
+## Events
+
+### Bustle
+- **Effect**: Doubles animal product production.
+- **Drop Chance**: 10% at +5°C. For every 5°C increase or decrease from +5°C, the chance decreases by 2%.
+- **Weather Dependence**: None.
+- **Zero Chance**: Above +25°C or below -15°C.
+- **Cooldown**: 7 in-game days.
+- **Duration**: From 4 in-game hours to 18 in-game hours.
+
+### Hunger Strike
+- **Effect**: Halves animal product production.
+- **Drop Chance**: 8%.
+- **Weather Dependence**: None.
+- **How to Remove**: Players must collect food from the Mayor and deliver it to each NPC from whom they have purchased animals. The bowl empties after feeding one NPC, so players need to return to the Mayor for more food after each delivery.
+- **Cooldown**: 6 in-game days.
+
+### Flu
+- **Effect**: Disables passive income.
+- **How to Remove**: Spend 4 in-game hours inside the player's house.
+- **Drop Chance**: 5% at -1°C and cloudy weather. Every 5°C decrease increases the chance by 1%.
+- **Zero Chance**: Temperature ≥ 0°C.
+- **Modifiers**: Sunny weather halves the chance. Snow increases the chance by 1.5x.
+- **Cooldown**: 8 in-game days.
+
+### Claustrophobia
+- **Effect**: Disables passive income. Counter to the "Flu" event. Triggers if the player stays indoors for too long.
+- **Special Event**: The following probabilities are checked every second while the player is inside:
+  - 30-45 seconds: 10%
+  - 45-60 seconds: 15%
+  - 60-120 seconds: 20%
+  - 120-180 seconds: 25%
+  - 180+ seconds: 100%
+- **How to Remove**: The same probabilities apply when the player exits the house.
+- **Cooldown**: None.
+
+### Taxation
+- **Special Event**: Independent of weather. Occurs once every 30 in-game days.
+- **Effect**: The Mayor demands 40% of the player's balance. During the event, players cannot make purchases from NPCs, and NPCs will not interact with the player.
+
+### Hour of Reckoning
+- **Special Event**: Independent of weather.
+- **Effect**: The Mayor demands 15 minutes' worth of the player's passive income. During the event, players cannot make purchases from NPCs, and NPCs will not interact with the player.
+- **Drop Chance**: 7%.
+- **Cooldown**: 8 in-game days.
+
+### Productivity
+- **Effect**: Speeds up all production and processing (except for initial animal products, which are affected by the "Bustle" event) by 2x.
+- **Drop Chance**: 10% at -5°C to +15°C and cloudy weather. For every 5°C increase or decrease from these temperatures, the chance decreases by 2% (no chance at -30°C).
+- **Modifiers**: Sunlight has no effect on the chance, while rain/snow halves it.
+- **Cooldown**: 8 in-game days.
+- **Duration**: From 2 in-game hours to 12 in-game hours.
+
+### Strike
+- **Effect**: Slows down all production and processing (except for initial animal products, which are affected by the "Hunger Strike" event) by 2x.
+- **How to Remove**: Players must speak to NPCs in production buildings in a randomly assigned order. Talking to an NPC out of order results in a refusal to interact.
+- **Drop Chance**: 4% at -5°C to +15°C and cloudy weather. Every 5°C increase or decrease from these temperatures increases the chance by 1%.
+- **Modifiers**: Sunlight reduces the chance by 1.5x if the temperature is below +25°C, but doubles the chance at temperatures ≥ +25°C. Rain/snow increases the chance by 1.5x.
+- **Cooldown**: 7 in-game days.
+
+### Barrel Leak
+- **Effect**: Barrels near crops empty, and players cannot refill them.
+- **How to Remove**: Use a wrench on barrels in all purchased crop fields.
+- **Drop Chance**: 6%.
+- **Weather Dependence**: None.
+- **Cooldown**: 8 in-game days.
+
+### Mushroom Rain
+- **Effect**: Doubles passive income.
+- **Drop Chance**: 7% in precipitation and 0°C. Every 5°C increase raises the chance by 1%.
+- **Zero Chance**: Temperatures below 0°C and during sunny/cloudy weather.
+- **Cooldown**: 8 in-game days.
+- **Duration**: From 2 in-game hours to 1 in-game day.
+
+### Pond Pollution
+- **Fishing Event**: Increases the chance of catching trash by 3x (no effect from donations).
+- **Drop Chance**: 5% in cloudy weather and 0°C. Every 5°C increase raises the chance by 1%.
+- **Modifiers**: Precipitation doubles the chance, while sunny weather halves it.
+- **Zero Chance**: Below 0°C.
+- **Cooldown**: 6 in-game days.
+- **Duration**: From 2 in-game hours to 6 in-game hours.
+
+### Fishing Dexterity
+- **Fishing Event**: Players catch 2 fish per cast.
+- **Drop Chance**: 4% at 0°C and cloudy weather. Every 5°C increase raises the chance by 2%.
+- **Modifiers**: Sunny weather increases the chance by 1.5x. Precipitation halves the chance.
+- **Zero Chance**: Below 0°C.
+- **Cooldown**: 7 in-game days.
+- **Duration**: From 2 in-game hours to 6 in-game hours.
+
+### Heavy Lifting
+- **Effect**: Players move items twice as fast (the load-carrying speed penalty is halved).
+- **Drop Chance**: 8% at 0°C and cloudy weather. Every 5°C decrease reduces the chance by 1%, while every 5°C increase up to +20-+24°C raises the chance by 1%. After +25°C, every 5°C increase reduces the chance by 2%.
+- **Modifiers**: Sunny weather increases the chance by 1.5x up to +20°C, but reduces the chance by 2x above +25°C. Precipitation halves the chance.
+- **Cooldown**: 8 in-game days.
+- **Duration**: From 2 in-game hours to 8 in-game hours.
+
+### Nightmares
+- **Halloween Event**: Disables income, production, processing, and export. To remove the event, players must "play dead" to receive a "drowned" status and then remove it.
+- **Weather Dependence**: None.
+- **Drop Chance**: 8% during the "Halloween" holiday. Can trigger once per Halloween event.
+
+The rest of the events follow a similar detailed structure, adjusting for chance, cooldowns, and specific weather conditions. Each event is designed to interact with both temperature and precipitation in meaningful ways.
+
+### New Weather Component: Wind
+
+#### Wind Characteristics
+- **Direction**: 8 directions (North, South, West, East, Northwest, Northeast, Southwest, Southeast). Technically, there is a ninth direction representing calmness (0 m/s wind speed).
+- **Speed**: Ranges from 0 m/s to 20 m/s.
+- **Daily Update**: At the start of each day, new wind speed and direction are set, alongside temperature and precipitation. 
+- **Direction Selection**: The wind direction is chosen randomly, with the restriction that the same direction cannot occur for more than three consecutive days.
+- **Speed Variation**: The wind speed is also set randomly within its range, with the restriction that it cannot change by more than 10 m/s from the previous day's value.
+
+#### Player Speed Dependency on Wind
+- **With Wind Direction**: If the player moves in the direction of the wind, their speed increases by \( \frac{x}{10} \) (where \( x \) is the wind speed in m/s).
+- **45-Degree Angle**: If the player moves at a 45-degree angle to the wind direction, their speed increases by \( \frac{x \sqrt{2}}{20} \).
+- **Perpendicular**: If the player moves perpendicular to the wind direction, their speed remains unchanged.
+- **135-Degree Angle**: If the player moves at a 135-degree angle to the wind direction, their speed decreases by \( \frac{x \sqrt{2}}{20} \).
+- **Against Wind Direction**: If the player moves against the wind direction, their speed decreases by \( \frac{x}{10} \).
+
+### Event Drop Chance Updates
+- The chance of event occurrence is checked every 10 minutes of gameplay instead of every 30 minutes.
+- The cooldowns for event occurrences have been reduced as follows:
+
+#### Cooldowns
+- **Drought**: 2 in-game days.
+- **Blooming**: 2 in-game days.
+- **Morning Dew**: 1.5 in-game days.
+- **Dirtiness**: 2 in-game days.
+- **Bustle**: 3 in-game days.
+- **Hunger Strike**: 2 in-game days.
+- **Flu**: 5 in-game days.
+- **Taxation**: Occurs once every 5 real-life days.
+- **Hour of Reckoning**: 3 in-game days.
+- **Productivity**: 3 in-game days.
+- **Strike**: 3 in-game days.
+- **Barrel Leak**: 4 in-game days.
+- **Mushroom Rain**: 2 in-game days.
+- **Pond Pollution**: 4 in-game days.
+- **Fishing Dexterity**: 4 in-game days.
+- **Heavy Lifting**: 3 in-game days.
+
 ## Locations
 
 ### General Principles
@@ -1283,4 +1549,84 @@ The ability to sell jewelry should be removed. Now, jewelry can only be crafted.
 29. **Choose from 3 processing buildings**, and select one where processing speed is boosted by 20%/25%/30%/40%/45%  
 30. **Customization crate for the farm**
 
+### Potion Brewing - Update from 11.09.2024
+Potion brewing is a new feature in **MyLittleFarm** that allows players to brew various potions. To start, players must build the **Witch's Cottage**, which requires the following materials: 
+- Stone
+- Iron
+- Birch wood
+- Witch's Cottage Blueprint
+
+This building also introduces an NPC named **Morgana**.
+
+#### How Potion Brewing Works
+A cauldron filled with water serves as the primary tool for brewing. Players "throw" ingredients into the cauldron, selecting them from a special storage (accessible through a dedicated menu). This storage holds all the materials available for brewing, which can also be sold or used for other purposes (this is handled in a separate menu for crafted potions).
+
+Once the ingredients are added, the brewing process begins, visualized by particles, and a **hologram** displays information about the brewing potion and its production progress.
+
+**Note:** Only one potion can be active at a time. If a player uses a potion, they cannot drink another while the effects of the first potion are active—**effects do not stack**.
+
+#### Ingredients for Potions
+
+- **Grass Gathering** (drop chance):
+  - **Hellebore** (0.5%)
+  - **Clover** (0.5%)
+  - **Amanita** (0.5%)
+
+- **Mining** (drop chance):
+  - **Coal Dust** (coal, 4%)
+  - **Ground Quartz** (quartz, 3%)
+  - **Gold Nugget** (gold, 2.75%)
+  - **Emerald Shard** (emerald, 2.5%)
+  - **Crushed Obsidian** (obsidian, 2%)
+
+- **Lumberjacking** (drop chance):
+  - **Oak Bark** (oak, 4%)
+  - **Wood Dust** (any wood, 5%)
+  - **Birch Sap** (birch, 3.5%)
+  - **Dark Oak Leaves** (dark oak, 3%)
+  - **Acacia Honey** (acacia, 2.5%)
+  - **Tropical Nectar** (tropical wood, 2%)
+
+- **Fishing** (drop chance):
+  - **Kelp** (5%)
+  - **Fish Oil Flask** (3%)
+  - **Saltwater Flask** (3%)
+  - **Clay** (5%)
+
+#### List of Potions, Recipes, Effects, and Duration:
+
+1. **Potion of Luck**
+   - **Ingredients:** Clover, Gold Nugget
+   - **Effect:** 20% chance to mine two blocks instead of one or catch two fish instead of one. Works in mines, forests, and fishing.
+   - **Duration:** 1 hour
+
+2. **Potion of Cleanliness**
+   - **Ingredients:** Ground Quartz, Oak Bark, Saltwater Flask
+   - **Effect:** Reduces the chance of a "dirty" debuff by 40%.
+   - **Duration:** 4 hours
+
+3. **Potion of Moisture**
+   - **Ingredients:** Emerald Shard, Birch Sap, Kelp
+   - **Effect:** Reduces the chance of a drought by 45%.
+   - **Duration:** 3 hours
+
+4. **Potion of Satiety**
+   - **Ingredients:** Hellebore, Acacia Honey, Fish Oil Flask
+   - **Effect:** Reduces the chance of hunger by 45%.
+   - **Duration:** 3 hours
+
+5. **Potion of Fertility**
+   - **Ingredients:** Clay, Wood Dust, Coal Dust, Dark Oak Leaves
+   - **Effect:** Opens a menu of all NPCs with plants or trees bought from them. Choosing an NPC increases their production income by 1.5x.
+   - **Duration:** 2 hours
+
+6. **Antigrippin**
+   - **Ingredients:** Amanita, Coal Dust, Fish Oil Flask
+   - **Effect:** Reduces the chance of catching the flu by 50%.
+   - **Duration:** 2 hours
+
+7. **Potion of Diligence**
+   - **Ingredients:** Crushed Obsidian, Tropical Nectar, Clover, Saltwater Flask
+   - **Effect:** Opens a menu of all NPCs with purchased processing buildings. Selecting an NPC increases processing speed by 1.5x.
+   - **Duration:** 2 hours
 
