@@ -258,8 +258,6 @@ Removes passive income. This event counters the "Dirty" event, triggered if the 
 The event is removed when the player exits the shower, with the same probabilities.  
 **No cooldown.**
 
-## Events
-
 ### Bustle
 - **Effect**: Doubles animal product production.
 - **Drop Chance**: 10% at +5°C. For every 5°C increase or decrease from +5°C, the chance decreases by 2%.
