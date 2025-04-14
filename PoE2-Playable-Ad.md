@@ -77,19 +77,19 @@ The advertisement will be a roguelike-style game, where the main goal is to defe
 After character selection, the player spawns in a graveyard surrounded by stone fences and objects.
 
 ### Graveyard
-Basic layout showing monster spawns and player area.
+
+The player spawns in a small, enclosed graveyard area surrounded by stone fences. Various decorative objects populate the space, enhancing immersion.
 
 ![How the graveyard should look](https://i.imgur.com/ACSQz1U.png)
 
 ### Merchant’s Shop
-- Animated stall  
-- "Sell" cube: walking the character there sells all loot  
-- Gold animation plays
+    - Sell collected loot automatically when entering the shop area.
+    - Visuals show gold transferring to the player.
 
 ### Blacksmith’s Shop
-- Animated stall with an "Upgrade" cube  
-- Standing inside upgrades weapon if player has enough gold  
-- Upgrade cost increases, ends with "Max" label
+    - Stand in the upgrade cube with enough gold to level up weapon.
+    - Each upgrade increases power and cost.
+    - Final upgrade changes "Upgrade" label to "Max".
 
 ![How the shops area should look](https://i.imgur.com/ezVuxaJ.png)
 
@@ -130,25 +130,6 @@ Basic layout showing monster spawns and player area.
 - **Loot:** Necromancer's Ears
 ---
 
-## Additional Interface Details
-
-### Character Portrait Example
-
-When the character selection screen is open:
-
-- **Top of Portrait:** Character's name
-- **Middle of Portrait:** Visual representation of the character
-- **Bottom of Portrait:** Short description of the character’s ability
-- **Below Portrait:** Button labeled “Play as <<Character>>”
-
----
-
-## Graveyard Area Description
-
-The player spawns in a small, enclosed graveyard area surrounded by stone fences. Various decorative objects populate the space, enhancing immersion.
-
----
-
 ## Monster Behavior Summary
 
 Monsters enter the graveyard area from off-screen and approach or attack the player in different ways depending on type:
@@ -158,21 +139,6 @@ Monsters enter the graveyard area from off-screen and approach or attack the pla
 - **Fallen Paladins:** Heavily armored, strong melee enemies with hammers.
 - **Cursed Witches:** Corruption-based ranged attackers that leave hazardous puddles.
 - **Necromancer Mini-Bosses:** Summon additional enemies periodically.
-
----
-
-## Upgrade and Progression System
-
-Players earn gold by defeating enemies and can spend it at two key locations:
-
-1. **Merchant’s Shop:**
-   - Sell collected loot automatically when entering the shop area.
-   - Visuals show gold transferring to the player.
-
-2. **Blacksmith’s Shop:**
-   - Stand in the upgrade cube with enough gold to level up weapon.
-   - Each upgrade increases power and cost.
-   - Final upgrade changes "Upgrade" label to "Max".
 
 ---
 
