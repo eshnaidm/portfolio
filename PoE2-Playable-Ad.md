@@ -9,7 +9,7 @@ The advertisement will be a roguelike-style game, where the main goal is to defe
 - **Type:** Interactive Playable Ad  
 - **Advertised Game:** *Path of Exile 2*  
 - **Platform:** Mobile  
-- **Duration:** 25–35 seconds  
+- **Duration:** 60-90 seconds  
 
 ---
 
@@ -68,6 +68,8 @@ The advertisement will be a roguelike-style game, where the main goal is to defe
 - Bottom: Character ability  
 - Below: "Play as <<Character>>" button
 
+![Example of how the character selection interface should look](https://i.imgur.com/XHLn8yJ.png)
+
 ---
 
 ## Map & Environment
@@ -76,6 +78,8 @@ After character selection, the player spawns in a graveyard surrounded by stone 
 
 ### Graveyard
 Basic layout showing monster spawns and player area.
+
+![How the graveyard should look](https://i.imgur.com/ACSQz1U.png)
 
 ### Merchant’s Shop
 - Animated stall  
@@ -86,6 +90,8 @@ Basic layout showing monster spawns and player area.
 - Animated stall with an "Upgrade" cube  
 - Standing inside upgrades weapon if player has enough gold  
 - Upgrade cost increases, ends with "Max" label
+
+![How the shops area should look](https://i.imgur.com/ezVuxaJ.png)
 
 ---
 
