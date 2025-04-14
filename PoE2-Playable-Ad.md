@@ -4,6 +4,7 @@
 This project is a game design document for a playable advertisement based on the game *Path of Exile 2*. Created for experience and exploration of a new field.
 
 ## Basic Concept
+
 The advertisement will be a roguelike-style game, where the main goal is to defeat monsters in a graveyard-themed map and level up the character before the ad ends.
 
 - **Type:** Interactive Playable Ad  
@@ -44,16 +45,19 @@ The advertisement will be a roguelike-style game, where the main goal is to defe
 ## Characters
 
 ### Warrior
+
 - **Weapon:** Longsword  
 - **Normal Attack:** Sword swing kills enemies in front  
 - **Ability:** Shockwave on ability use
 
 ### Sorcerer
+
 - **Weapon:** Staff  
 - **Normal Attack:** Chain lightning through 4 enemies  
 - **Ability:** Expanding and contracting lightning ring
 
 ### Ranger
+
 - **Weapon:** Longbow  
 - **Normal Attack:** Fires arrows forward  
 - **Ability:** Fires 4 arrows instead of one
@@ -63,10 +67,11 @@ The advertisement will be a roguelike-style game, where the main goal is to defe
 ## UI Interaction
 
 **Character Selection Interface:**
+
 - Top: Character name  
 - Center: Character portrait  
 - Bottom: Character ability  
-- Below: "Play as <<Character>>" button
+- Below: "Play as [Character]" button
 
 ![Example of how the character selection interface should look](https://i.imgur.com/XHLn8yJ.png)
 
@@ -83,10 +88,12 @@ The player spawns in a small, enclosed graveyard area surrounded by stone fences
 ![How the graveyard should look](https://i.imgur.com/ACSQz1U.png)
 
 ### Merchant’s Shop
+
 - Sell collected loot automatically when entering the shop area.
 - Visuals show gold transferring to the player.
 
 ### Blacksmith’s Shop
+
 - Stand in the upgrade cube with enough gold to level up weapon.
 - Each upgrade increases power and cost.
 - Final upgrade changes "Upgrade" label to "Max".
@@ -128,6 +135,7 @@ The player spawns in a small, enclosed graveyard area surrounded by stone fences
 - **Health:** 8 hits or 4 abilities  
 - **Look:** Floating hooded figure with large staff  
 - **Loot:** Necromancer's Ears
+
 ---
 
 ## Monster Behavior Summary
@@ -152,12 +160,39 @@ After reaching the maximum upgrade level and defeating the third monster wave an
 
 ---
 
+## Boss
+
+### Grave Tyrant
+
+| Name | Type | Spawn Condition | Health | Behavior | Abilities | Look | Loot |
+|------|------|----------------|--------|----------|-----------|------|------|
+| **Grave Tyrant** | Final Boss | After all weapon upgrades and mini-bosses are defeated | 16 hits or 8 abilities | Aggressively pursues player, alternates melee and abilities, summons minions at low health | Shadow Cleave, Soul Chains, Summon Wraiths, Dark Aura | Towering armored wraith with spectral crown, massive sword, ghostly chains, shadowy mist | Morvax’s Crown (visual only) |
+
+#### Abilities
+
+- **Soul Chains:** Periodically launches chains that root the player for 1.5 seconds unless dodged.
+
+#### Behavior
+
+- Aggressively pursues the player, alternating between melee attacks and abilities.
+- Uses Soul Chains if the player keeps distance.
+
+#### Loot
+
+- **Morvax’s Crown** (visual only, signifies victory)
+
+> *Defeating Morvax opens the portal that the player needs to enter, but it opens the game page to continue.*
+
+---
+
 ## Notes
 
 - Interface elements are optimized for mobile touch input.
 - Players use a **virtual joystick** (bottom-left) to move.
 - **Attack and Ability buttons** are located bottom-right.
 - All actions feature appropriate visual and audio feedback to enhance engagement during the short ad runtime.
+- The player cannot die, he doesnt have health points.
+- The monsters doesnt have to be challenging for the player
 
 ---
 
