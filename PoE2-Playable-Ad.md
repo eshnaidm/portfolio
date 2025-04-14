@@ -83,13 +83,13 @@ The player spawns in a small, enclosed graveyard area surrounded by stone fences
 ![How the graveyard should look](https://i.imgur.com/ACSQz1U.png)
 
 ### Merchant’s Shop
-    - Sell collected loot automatically when entering the shop area.
-    - Visuals show gold transferring to the player.
+- Sell collected loot automatically when entering the shop area.
+- Visuals show gold transferring to the player.
 
 ### Blacksmith’s Shop
-    - Stand in the upgrade cube with enough gold to level up weapon.
-    - Each upgrade increases power and cost.
-    - Final upgrade changes "Upgrade" label to "Max".
+- Stand in the upgrade cube with enough gold to level up weapon.
+- Each upgrade increases power and cost.
+- Final upgrade changes "Upgrade" label to "Max".
 
 ![How the shops area should look](https://i.imgur.com/ezVuxaJ.png)
 
