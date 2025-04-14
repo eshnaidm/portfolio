@@ -166,7 +166,7 @@ After reaching the maximum upgrade level and defeating the third monster wave an
 
 | Name | Type | Spawn Condition | Health | Behavior | Abilities | Look | Loot |
 |------|------|----------------|--------|----------|-----------|------|------|
-| **Grave Tyrant** | Final Boss | After all weapon upgrades and mini-bosses are defeated | 16 hits or 8 abilities | Aggressively pursues player, alternates melee and abilities, summons minions at low health | Shadow Cleave, Soul Chains, Summon Wraiths, Dark Aura | Towering armored wraith with spectral crown, massive sword, ghostly chains, shadowy mist | Morvax’s Crown (visual only) |
+| **Grave Tyrant** | Final Boss | After all weapon upgrades and mini-bosses are defeated | 16 hits or 8 abilities | Aggressively pursues player, alternates melee and abilities | Soul Chains | Towering armored wraith with spectral crown, massive sword, ghostly chains, shadowy mist | Tyrant’s Crown (visual only) |
 
 #### Abilities
 
@@ -179,9 +179,9 @@ After reaching the maximum upgrade level and defeating the third monster wave an
 
 #### Loot
 
-- **Morvax’s Crown** (visual only, signifies victory)
+- **Tyrant’s Crown** (visual only, signifies victory)
 
-> *Defeating Morvax opens the portal that the player needs to enter, but it opens the game page to continue.*
+> *Defeating the Tyrant creates the portal that the player needs to enter, but it opens the game page to continue.*
 
 ---
 
