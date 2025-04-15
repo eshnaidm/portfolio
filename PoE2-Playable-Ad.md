@@ -72,7 +72,6 @@ The advertisement will be a roguelike-style game, where the main goal is to defe
 - Center: Character portrait  
 - Bottom: Character ability  
 - Below: "Play as [Character]" button
-
 - Example of how the character selection interface should look
 ![Example of how the character selection interface should look](https://i.imgur.com/XHLn8yJ.png)
 
@@ -103,7 +102,7 @@ The player spawns in a small, enclosed graveyard area surrounded by stone fences
 - Stand in the upgrade cube with enough gold to level up weapon.
 - Each upgrade increases power and cost.
 - Final upgrade changes "Upgrade" label to "Max".
-
+- How the shops area should look
 ![How the shops area should look](https://i.imgur.com/ezVuxaJ.png)
 
 ---
