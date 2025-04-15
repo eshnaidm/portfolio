@@ -73,7 +73,12 @@ The advertisement will be a roguelike-style game, where the main goal is to defe
 - Bottom: Character ability  
 - Below: "Play as [Character]" button
 
+- Example of how the character selection interface should look
 ![Example of how the character selection interface should look](https://i.imgur.com/XHLn8yJ.png)
+
+**Inventory**
+
+In the bottom of the screen, the player have an inventory with 6 slots for loot, the items can stack with a limit of 20 items. The inventory exist as a place to stash loot, that later you can sell to the merchant.
 
 ---
 
@@ -85,6 +90,7 @@ After character selection, the player spawns in a graveyard surrounded by stone 
 
 The player spawns in a small, enclosed graveyard area surrounded by stone fences. Various decorative objects populate the space, enhancing immersion.
 
+- How the graveyard should look
 ![How the graveyard should look](https://i.imgur.com/ACSQz1U.png)
 
 ### Merchant’s Shop
