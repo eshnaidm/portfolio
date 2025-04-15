@@ -99,10 +99,11 @@ The player spawns in a small, enclosed graveyard area surrounded by stone fences
 
 | Name | Type | Spawn Rate | Max Count | Behavior | Health | Look | Loot |
 |------|------|------------|-----------|----------|--------|------|------|
-| **Reanimated Skeleton** | Melee | every 0.25s | 20 | Crawls toward player, hits with hand | 1 hit | Half-body skeleton with glowing eyes | 1–3 Bones |
-| **Bloody Imp** | Ranged | every 0.55s | 15 | Fires weak fireballs, slowly approaches | 1 hit | Small demon, jumpy movement | 1–2 Demon Horns |
-| **Fallen Paladin** | Melee | every 1.1s | 8 | Moves toward player, dark glow, attacks with hammer | 4 hits or 2 abilities | Heavy armor, dark rays, big black hammer | Rusty Sword |
-| **Cursed Witch** | Ranged | every 1.25s | 8 | Shoots corruption balls, leaves puddles | 4 hits or 2 abilities | Long dress, leaking corruption, glowing eyes, dark staff | Staff |
+| **Reanimated Skeleton** | Melee | every 0.25 seconds | 20 | Crawls toward player, hits with hand | 1 hit | Half-body skeleton with glowing eyes | 1–3 Bones |
+| **Bloody Imp** | Ranged | every 0.55 seconds | 15 | Fires weak fireballs, slowly approaches | 1 hit | Small demon, jumpy movement | 1–2 Demon Horns |
+| **Fallen Paladin** | Melee | every 1.1 seconds | 8 | Moves toward player, dark glow, attacks with hammer | 4 hits or 2 abilities | Heavy armor, dark rays, big black hammer | Rusty Sword |
+| **Cursed Witch** | Ranged | every 1.25 seconds | 8 | Shoots corruption balls, leaves puddles | 4 hits or 2 abilities | Long dress, leaking corruption, glowing eyes, dark staff | Staff |
+| **Necromancer** | Mini-Boss | Every 6 seconds | 2 | Revives each surrounding monster x2 every 5s | 8 hits or 4 abilities | Floating hooded figure with large staff | Necromancer's Hood |
 
 > *Fallen Paladin and Cursed Witch appear after 1st weapon upgrade.*
 
@@ -115,19 +116,6 @@ The player spawns in a small, enclosed graveyard area surrounded by stone fences
   - Sword Icon: Normal attack (can be held down)  
   - Ability Icon: Casts ability with cooldown
 
----
-
-## Mini-Boss
-
-### Necromancer
-
-- **Spawn Rate:** Every 10s  
-- **Max Count:** 2  
-- **Ability:** Revives each surrounding monster x2 every 5s  
-- **Appears:** After 2nd weapon upgrade  
-- **Health:** 8 hits or 4 abilities  
-- **Look:** Floating hooded figure with large staff  
-- **Loot:** Necromancer's Ears
 ---
 
 ## Monster Behavior Summary
