@@ -123,6 +123,8 @@ The player spawns in a small, enclosed graveyard area surrounded by stone fences
   - Sword Icon: Normal attack (can be held down)  
   - Ability Icon: Casts ability with cooldown
 
+---
+
 ## Monster Behavior Summary
 
 Monsters enter the graveyard area from off-screen and approach or attack the player in different ways depending on type:
