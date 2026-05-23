@@ -1,0 +1,122 @@
+<section class="timeline-section section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Journey</h2>
+      <p>How my projects have evolved over time</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">August 2023</span>
+          <h3>QA Testing Portfolio</h3>
+          <p>Created comprehensive Steam launcher test plan with 11 test cases and documented 4 bugs — starting my journey in quality assurance.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2023</span>
+          <h3>Game Design Documents</h3>
+          <p>Wrote detailed GDDs for multiple game concepts — farming simulators, survival games, PvP systems, and mobile playable ads.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">May 2026</span>
+          <h3>R.S.M Repair Management System</h3>
+          <p>Built a full-stack web CRM for a real repair shop — Next.js, PostgreSQL, Docker deployment, Hebrew RTL interface. Shipped to production.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker active"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">May 2026</span>
+          <h3>Bunker — Android Party Game</h3>
+          <p>Developed a multiplayer Android game with Kotlin, Jetpack Compose, and Firebase real-time sync. 104-file Clean Architecture codebase.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+  }
+
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: -2rem;
+    top: 0.3rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border);
+    z-index: 1;
+  }
+
+  .timeline-marker.active {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 12px var(--accent-glow);
+  }
+
+  .timeline-content {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+  }
+
+  .timeline-date {
+    font-size: 0.8rem;
+    color: var(--accent-primary);
+    font-weight: 500;
+  }
+
+  .timeline-content h3 {
+    margin: 0.4rem 0 0.5rem;
+    font-size: 1.05rem;
+  }
+
+  .timeline-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .timeline {
+      padding-left: 1.5rem;
+    }
+    .timeline-marker {
+      left: -1.5rem;
+    }
+  }
+</style>

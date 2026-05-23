@@ -1,0 +1,76 @@
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Get In Touch</h2>
+      <p>Interested in working together? Let's connect.</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:erich2204@gmail.com" class="contact-item">
+        <span class="contact-icon">&#9993;</span>
+        <span class="contact-label">Email</span>
+        <span class="contact-value">erich2204@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/erich-shnaidman-0a3323279/" target="_blank" rel="noopener" class="contact-item">
+        <span class="contact-icon">&#128101;</span>
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">Erich Shnaidman</span>
+      </a>
+      <a href="https://github.com/eshnaidm" target="_blank" rel="noopener" class="contact-item">
+        <span class="contact-icon">&#128187;</span>
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">eshnaidm</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem 3rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: border-color var(--transition), transform var(--transition);
+    color: var(--text-primary);
+  }
+
+  .contact-item:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+    color: var(--text-primary);
+  }
+
+  .contact-icon {
+    font-size: 1.5rem;
+  }
+
+  .contact-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .contact-value {
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    .contact-item {
+      padding: 1.5rem 2rem;
+      width: 100%;
+    }
+  }
+</style>

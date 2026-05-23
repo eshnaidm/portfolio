@@ -1,6 +1,15 @@
+---
+title: "Steam Launcher QA Test Plan"
+description: "Comprehensive test plan covering 11 test cases and 4 reported issues for the Steam desktop client v1690583737."
+category: "qa"
+tags: ["QA", "Test Plan", "Steam", "Desktop"]
+date: "2023-08-09"
+featured: true
+order: 3
+---
  # Steam Test plan
 
-#### Test planner: Erik, Test executor: Erik
+#### Test planner: Erich, Test executor: Erich
 
 - Enviroment: Windows 10
 - Project: Steam launcher version 1690583737

@@ -1,0 +1,92 @@
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-in">
+        <span class="stat-number" data-target="9">0</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-item fade-in">
+        <span class="stat-number" data-target="64">0</span>
+        <span class="stat-label">Test Cases Written</span>
+      </div>
+      <div class="stat-item fade-in">
+        <span class="stat-number" data-target="5">0</span>
+        <span class="stat-label">Game Designs</span>
+      </div>
+      <div class="stat-item fade-in">
+        <span class="stat-number" data-target="2">0</span>
+        <span class="stat-label">Apps Built</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counters = entry.target.querySelectorAll('.stat-number');
+        counters.forEach(counter => {
+          const target = parseInt(counter.getAttribute('data-target') || '0');
+          let current = 0;
+          const increment = Math.max(1, Math.floor(target / 30));
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              (counter as HTMLElement).textContent = target + '+';
+              clearInterval(timer);
+            } else {
+              (counter as HTMLElement).textContent = String(current);
+            }
+          }, 50);
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const statsSection = document.querySelector('.stats-section');
+  if (statsSection) observer.observe(statsSection);
+</script>
+
+<style>
+  .stats-section {
+    padding: 4rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-secondary);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    line-height: 1;
+  }
+
+  .stat-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem 1rem;
+    }
+  }
+</style>

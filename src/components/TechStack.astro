@@ -1,0 +1,116 @@
+<section class="tech-section section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Tech Stack</h2>
+      <p>Technologies and tools I work with</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <div class="tech-icon">TS</div>
+        <span>TypeScript</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">Kt</div>
+        <span>Kotlin</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">Nx</div>
+        <span>Next.js</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">Re</div>
+        <span>React</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">JC</div>
+        <span>Jetpack Compose</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">Fb</div>
+        <span>Firebase</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">Pg</div>
+        <span>PostgreSQL</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">Dk</div>
+        <span>Docker</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">Pr</div>
+        <span>Prisma</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">Gt</div>
+        <span>Git</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon ai">AI</div>
+        <span>Claude Code</span>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon ai">AI</div>
+        <span>Codex</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1.25rem 0.75rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: border-color var(--transition), transform var(--transition);
+  }
+
+  .tech-item:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+  }
+
+  .tech-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .tech-icon.ai {
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--accent-primary);
+  }
+
+  .tech-item span {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .tech-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

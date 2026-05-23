@@ -1,0 +1,112 @@
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>About Me</h2>
+    </div>
+    <div class="about-content">
+      <p>
+        I'm a Game Designer, QA Tester, and Developer who builds full-stack applications
+        and designs complex game systems. I leverage AI-assisted development with tools like
+        Claude Code and Codex to ship production software rapidly — from Android multiplayer games
+        to business management systems.
+      </p>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Development</h3>
+          <ul>
+            <li>Next.js / React</li>
+            <li>Kotlin / Android</li>
+            <li>TypeScript</li>
+            <li>PostgreSQL / Prisma</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Game Design</h3>
+          <ul>
+            <li>Systems Design</li>
+            <li>Economy Balancing</li>
+            <li>Progression Systems</li>
+            <li>GDD Documentation</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>QA Testing</h3>
+          <ul>
+            <li>Test Planning</li>
+            <li>Bug Reporting</li>
+            <li>Regression Testing</li>
+            <li>Cross-platform QA</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI & Tools</h3>
+          <ul>
+            <li>Claude Code / Claude AI</li>
+            <li>OpenAI Codex</li>
+            <li>Git / GitHub</li>
+            <li>Jira / Bug Trackers</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .about-content > p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .skill-group {
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+
+  .skill-group h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--accent-primary);
+  }
+
+  .skill-group ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .skill-group li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    padding: 0.35rem 0;
+  }
+
+  @media (max-width: 1024px) {
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
