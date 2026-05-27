@@ -13,7 +13,7 @@ const { title, description, category, tags, slug } = Astro.props;
 <a href={`/projects/${slug}`} class="project-card" data-category={category}>
   <div class="card-header">
     <span class={`badge badge-${category}`}>
-      {category === 'qa' ? 'QA Testing' : category === 'game-design' ? 'Game Design' : 'Development'}
+      {category === 'qa' ? 'QA Testing' : category === 'game-design' ? 'Game Design' : 'AI-Built'}
     </span>
   </div>
   <h3>{title}</h3>

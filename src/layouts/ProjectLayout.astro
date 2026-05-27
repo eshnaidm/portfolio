@@ -23,7 +23,7 @@ const { title, description, category, tags, date } = Astro.props;
         <header class="project-header">
           <div class="project-meta">
             <span class={`badge badge-${category}`}>
-              {category === 'qa' ? 'QA Testing' : category === 'game-design' ? 'Game Design' : 'Development'}
+              {category === 'qa' ? 'QA Testing' : category === 'game-design' ? 'Game Design' : 'AI-Built'}
             </span>
             <time datetime={date}>{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}</time>
           </div>
