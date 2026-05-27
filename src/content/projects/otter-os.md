@@ -6,6 +6,7 @@ tags: ["PowerShell", "Windows", "Tooling", "PC Repair"]
 date: "2026-05-01"
 featured: true
 order: 3
+githubUrl: "https://github.com/eshnaidm/OtterOS"
 ---
 
 # OtterOS — Technician Multi-Boot USB Toolkit
