@@ -11,6 +11,7 @@ const projects = defineCollection({
     featured: z.boolean().default(false),
     order: z.number(),
     githubUrl: z.string().optional(),
+    liveUrl: z.string().optional(),
   }),
 });
 
